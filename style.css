@@ -3,3 +3,7 @@ body {
  background-image: url("background.jpg");
  
 }
+nav.search{
+    background-color:grey;
+    padding: 10px
+}
