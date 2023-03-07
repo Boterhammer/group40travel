@@ -1,8 +1,10 @@
 ## Pages:
 
-Main page
+Landing page: index.html
 
-List page
+Main page: main.html
 
-Destination page
+Destination page: destinations/X.html
+
+style.css
 
