@@ -16,7 +16,7 @@ body {
      }
      
      /* Style the buttons that are used to open the tab content */
-     .tab button {
+     .tab button{
        background-color: inherit;
        float: left;
        border: none;
@@ -25,7 +25,7 @@ body {
        padding: 14px 16px;
        transition: 0.3s;
      }
-     
+
      /* Change background color of buttons on hover */
      .tab button:hover {
        background-color: #ddd;
@@ -35,7 +35,33 @@ body {
      .tab button.active {
        background-color: #1df465;
      }
-     
+
+     #favLinks {
+      background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+      background-size: cover;
+      background-color: rgb(238, 46, 78)
+     }
+
+     #leisure {
+      background-image: url("https://static.thenounproject.com/png/2117454-200.png");
+      background-size: cover;
+     }
+
+     #restaurants {
+      background-image: url("https://static.thenounproject.com/png/2912457-200.png");
+      background-size: cover;
+     }
+
+     #transportation {
+      background-image: url("https://static.thenounproject.com/png/5322294-200.png");
+      background-size: cover;
+     }
+
+     #hotel {
+      background-image: url("https://static.thenounproject.com/png/633850-200.png");
+      background-size: cover;
+     }
+
      /* Style the tab content */
      .tabcontent {
        display: none;

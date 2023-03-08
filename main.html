@@ -9,10 +9,11 @@
 <body>
   <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Leisure')">Leisure</button>
-    <button class="tablinks" onclick="openCity(event, 'Restaurants')">Restaurants</button>
-    <button class="tablinks" onclick="openCity(event, 'Transportation')">Transportation</button>
-    <button class="tablinks" onclick="openCity(event, 'Hotels')">Hotels</button>
+    <button id="leisure" onclick="openCity(event, 'Leisure')"></button>
+    <button id="restaurants" onclick="openCity(event, 'Restaurants')"></button>
+    <button id="transportation" onclick="openCity(event, 'Transportation')"></button>
+    <button id="hotel" onclick="openCity(event, 'Hotels')"></button>
+    <button id="favLinks" onclick="openCity(event, 'Favourites')"></button>
   </div>
   
   <!-- Tab content -->
@@ -50,6 +51,15 @@
       </nav> 
     <h3>Hotels</h3>
     <p>All the hotels are suggested here</p>
+  </div>
+
+  <div id="Favourites" class="tabcontent">
+    <nav class ="search">
+        <input type="text" id="destination" placeholder ="Destination" name = "destination">
+        <a href="#search">Search</a>
+      </nav> 
+    <h3>Favourites</h3>
+    <p>All the Favourites are suggested here</p>
   </div>
 
 </body>
