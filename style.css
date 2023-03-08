@@ -6,4 +6,18 @@ body {
 nav.search{
     background-color:grey;
     padding: 10px
+    
+}
+
+.dutch, .english{
+    display: none;
+    color : red; /* Cuno you can change the style of all of the text here */
+}
+
+body[data-lang='english'] .english{
+    display: block;
+}
+
+body[data-lang='dutch'] .dutch{
+    display: block;
 }

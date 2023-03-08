@@ -4,14 +4,31 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <title> group40travel </title> 
+  <title> group40travel </title>
 </head>
-<body>
-  <h1> test test </h1>  
-  <nav class ="search">
-    <input type="text" id="destination" placeholder ="Destination" name = "destination">
+
+
+
+
+<body data-lang="english">
+  <h1> test test </h1>
+  <nav class="search">
+    <input type="text" id="destination" placeholder="Destination" name="destination">
     <a href="#search">Search</a>
-  </nav>  
+  </nav>
+
+  <p onclick="changeLanguage('english')"> english <br></p>
+  <p onclick="changeLanguage('dutch')"> dutch <br></p>
+
+
+  <p class="english">ENGLISH TEXT <br></p>
+  <p class="dutch" >DUTCH TEXT <br></p>
+  <script>
+    function changeLanguage(newLanguage) {
+      document.body.dataset.lang=newLanguage;
+    }
+  </script>
+
 </body>
 
 </html>
