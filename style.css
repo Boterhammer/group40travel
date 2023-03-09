@@ -2,10 +2,8 @@ body {
  background-color: #ffffff;
  /*background-image: url("background.jpg");*/
  background-image: url("background4.avif");
-
  background-size: 80%;
  background-position: 100% 5%;
-
  background-repeat: no-repeat;
 }
 nav.search{
@@ -15,8 +13,9 @@ nav.search{
 #title {
     color : orange;
     font-size: 75px;
-    margin-top : 150px;
+    margin-top : 60px;
  }
+
 ul {
   opacity : 0.8;
   list-style-type: none;
@@ -40,7 +39,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: orange;
 }
 
 #searchBar{
@@ -52,16 +51,17 @@ li a:hover {
     top:50%;
     width:80%;
 }
-#searchBar > #destination >  #searchButton{
-    opacity : 1;
-}
 
 #destination{
+    border-radius: 8px;
+    border-color : #FFD580;
+    border-width: thin;
     padding : 15px;
     width: 80%;
     align-items: center;
     justify-content: center;
     margin-left: 5%;
+    font-size : 20px;
 }
 
 #searchButton{
