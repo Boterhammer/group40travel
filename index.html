@@ -4,14 +4,45 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <title> group40travel </title> 
+  <title> group40travel </title>
 </head>
-<body>
-  <h1> test test </h1>  
-  <nav class ="search">
-    <input type="text" id="destination" placeholder ="Destination" name = "destination">
-    <a href="#search">Search</a>
-  </nav>  
+
+
+
+
+<body data-lang="english">
+  <div id = "navBar">
+<!--    <nav class="search">-->
+<!--      <li><a href="default.asp">Home</a></li>-->
+<!--      <li><a href="news.asp">News</a></li>-->
+<!--      <li><a href="contact.asp">Contact</a></li>-->
+<!--      <li><a href="about.asp">About</a></li>-->
+<!--    </nav>-->
+    <ul class="search">
+      <li><a href="#contact">login</a></li>
+    </ul>
+  </div>
+
+  <h1 id = "title"> TripToGo </h1>
+
+  <div id = searchBar>
+    <input type="text" id="destination" placeholder="Destination" name="destination">
+<!--    <a href="#search">Search</a>-->
+    <button id = "searchButton">Search</button>
+  </div>
+
+  <p onclick="changeLanguage('english')"> english <br></p>
+  <p onclick="changeLanguage('dutch')"> dutch <br></p>
+
+
+  <p class="english">ENGLISH TEXT <br></p>
+  <p class="dutch" >DUTCH TEXT <br></p>
+  <script>
+    function changeLanguage(newLanguage) {
+      document.body.dataset.lang=newLanguage;
+    }
+  </script>
+
 </body>
 
 </html>

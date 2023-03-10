@@ -1,12 +1,93 @@
 body {
-    background-color: #ffffff;
-    background-image: url("background.jpg");
-    
+  background-color: #ffffff;
+  /*background-image: url("background.jpg");*/
+  background-image: url("background4.avif");
+  background-size: 100%;
+  background-position: 0% -20%;
+  background-repeat: no-repeat;
    }
    nav.search{
-       background-color:grey;
-       padding: 10px
-   }
+    background-color:white;
+}
+#title {
+    color : orange;
+    font-size: 60px;
+    margin-left : 2%;
+    margin-top : 0;
+ }
+
+ul {
+  opacity : 0.8;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: white;
+  width:90%
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding : 3px 5px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: orange;
+}
+
+#searchBar{
+    background-color:white;
+    padding : 10px;
+    opacity: 0.9;
+    position:absolute;
+    left:10%;
+    top:50%;
+    width:80%;
+}
+
+#destination{
+    border-radius: 8px;
+    border-color : #FFD580;
+    border-width: thin;
+    padding : 15px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    font-size : 20px;
+}
+
+#searchButton{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.dutch, .english{
+    display: none;
+    color : red; /* Cuno you can change the style of all of the text here */
+}
+
+body[data-lang='english'] .english{
+    display: block;
+}
+
+body[data-lang='dutch'] .dutch{
+    display: block;
+}
    
    .tab {
        overflow: hidden;
@@ -58,37 +139,37 @@ body {
       background-color: #1df465;
      }
 
-     #like {
-      background-image: url("https://static.thenounproject.com/png/5568308-200.png");
-      background-size: cover;
-     }
+#like {
+ background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+ background-size: cover;
+}
 
-     #favLinks {
-      background-image: url("https://static.thenounproject.com/png/5568308-200.png");
-      background-size: cover;
-      background-color: rgb(238, 46, 78)
-     }
+#favLinks {
+ background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+ background-size: cover;
+ background-color: rgb(238, 46, 78)
+}
 
-     #leisure {
-      background-image: url("https://static.thenounproject.com/png/2117454-200.png");
-      background-size: cover;
-      
-     }
+#leisure {
+ background-image: url("https://static.thenounproject.com/png/2117454-200.png");
+ background-size: cover;
+ 
+}
 
-     #restaurants {
-      background-image: url("https://static.thenounproject.com/png/2912457-200.png");
-      background-size: cover;
-     }
+#restaurants {
+ background-image: url("https://static.thenounproject.com/png/2912457-200.png");
+ background-size: cover;
+}
 
-     #transportation {
-      background-image: url("https://static.thenounproject.com/png/5322294-200.png");
-      background-size: cover;
-     }
+#transportation {
+ background-image: url("https://static.thenounproject.com/png/5322294-200.png");
+ background-size: cover;
+}
 
-     #hotel {
-      background-image: url("https://static.thenounproject.com/png/633850-200.png");
-      background-size: cover;
-     }
+#hotel {
+ background-image: url("https://static.thenounproject.com/png/633850-200.png");
+ background-size: cover;
+}
 
      
      .tabcontent {
