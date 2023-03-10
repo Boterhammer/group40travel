@@ -9,6 +9,7 @@
 <body>
   <!-- Tab links -->
 <div class="tab">
+    <button id="home" onclick="location.href='index.html';">Home</button>
     <button id="leisure" onclick="openTab(event, 'Leisure')"></button>
     <button id="restaurants" onclick="openTab(event, 'Restaurants')"></button>
     <button id="transportation" onclick="openTab(event, 'Transportation')"></button>
@@ -18,19 +19,23 @@
   
   <!-- Tab content -->
   <div id="Leisure" class="tabcontent">
-    <nav class ="search">
+     <!--<nav class ="search">
         <input type="text" id="destination" placeholder ="Destination" name = "destination">
         <a href="#search">Search</a>
-      </nav> 
-    <h3>Leisure</h3>
-    <p>All the activities are suggested here</p>
+      </nav> -->
+      <section id="Pathe">
+        <h4>Pathe Arena</h4>
+        <p> stuff stuff stuff</p>
+        <button id="like" onclick="openTab(event, 'Like')"></button>
+        <button id="book" onclick="openTab(event, 'Book')">Book</button>
+      </section>
   </div>
   
   <div id="Restaurants" class="tabcontent">
-    <nav class ="search">
+    <!--<nav class ="search">
         <input type="text" id="destination" placeholder ="Destination" name = "destination">
         <a href="#search">Search</a>
-      </nav> 
+      </nav> -->
     <section id="Grieks">
       <h4>Grieks Restaurant Alexandros</h4>
       <p> stuff stuff stuff</p>
@@ -41,28 +46,36 @@
   </div>
   
   <div id="Transportation" class="tabcontent">
-    <nav class ="search">
+    <!--<nav class ="search">
         <input type="text" id="destination" placeholder ="Destination" name = "destination">
         <a href="#search">Search</a>
-      </nav> 
-    <h3>Transportation</h3>
-    <p>All the Transportation is suggested here</p>
+      </nav> -->
+      <section id="NS">
+        <h4>NS Trains</h4>
+        <p> stuff stuff stuff</p>
+        <button id="like" onclick="openTab(event, 'Like')"></button>
+        <button id="book" onclick="openTab(event, 'Book')">Book</button>
+      </section>
   </div>
 
   <div id="Hotels" class="tabcontent">
-    <nav class ="search">
+    <!--<nav class ="search">
         <input type="text" id="destination" placeholder ="Destination" name = "destination">
         <a href="#search">Search</a>
-      </nav> 
-    <h3>Hotels</h3>
-    <p>All the hotels are suggested here</p>
+      </nav> -->
+      <section id="Hilton">
+        <h4>Hilton</h4>
+        <p> stuff stuff stuff</p>
+        <button id="like" onclick="openTab(event, 'Like')"></button>
+        <button id="book" onclick="openTab(event, 'Book')">Book</button>
+      </section>
   </div>
 
   <div id="Favourites" class="tabcontent">
-    <nav class ="search">
+    <!--<nav class ="search">
         <input type="text" id="destination" placeholder ="Destination" name = "destination">
         <a href="#search">Search</a>
-      </nav> 
+      </nav> -->
     <h3>Favourites</h3>
     <p>All the Favourites are suggested here</p>
   </div>

@@ -15,7 +15,7 @@ body {
        background-color: #f1f1f1;
        display: flex;
        justify-content: center;
-       width: 500px;
+       width: 800px;
        position: absolute;
        top: 20%;
        left: 50%;
@@ -96,13 +96,13 @@ body {
      /* Style the tab content */
      .tabcontent {
        padding: 6px 10px;
-       border: 1px solid #ccc;
-       border-top: none;
+       border: 10px solid black;
+       border-top: 10px solid black;
        display: none;
        justify-content: center;
-       color: aliceblue;
+       color: black;
        position: absolute;
-       top: 35%;
+       top: 40%;
        left: 50%;
        width: 790px;
        transform: translate(-50%, -50%); 
