@@ -89,34 +89,34 @@ body[data-lang='dutch'] .dutch{
     display: block;
 }
    
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: center;
-  width: 500px;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button{
-   background-color: inherit;
-   float: left;
-   border: 2px solid #000000;
-   border-radius: 5px;
-   outline: none;
-   cursor: pointer;
-   width: 60px;
-   height: 60px;
-   padding: 10px 10px;
-   margin: 10px;
-  transition: 0.3s;
-}
+   /* Style the tab */
+   .tab {
+       overflow: hidden;
+       border: 1px solid #ccc;
+       background-color: #f1f1f1;
+       display: flex;
+       justify-content: center;
+       width: 800px;
+       position: absolute;
+       top: 20%;
+       left: 50%;
+       transform: translate(-50%, -50%); 
+     }
+     
+     /* Style the buttons that are used to open the tab content */
+     .tab button{
+        background-color: inherit;
+        float: left;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        padding: 10px 10px;
+        margin: 10px;
+       transition: 0.3s;
+     }
 
 .tabcontent button {
    background-color: white;
@@ -174,17 +174,18 @@ body[data-lang='dutch'] .dutch{
  background-size: cover;
 }
 
-/* Style the tab content */
-.tabcontent {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-top: none;
-  display: none;
-  justify-content: center;
-  color: aliceblue;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  width: 790px;
-  transform: translate(-50%, -50%); 
-}
+     /* Style the tab content */
+     .tabcontent {
+       padding: 6px 10px;
+       border: 10px solid black;
+       border-top: 10px solid black;
+       display: none;
+       justify-content: center;
+       color: black;
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       width: 790px;
+       transform: translate(-50%, -50%); 
+     }
+   
