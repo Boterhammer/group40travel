@@ -9,10 +9,11 @@
 <body>
   <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Leisure')">Leisure</button>
-    <button class="tablinks" onclick="openCity(event, 'Restaurants')">Restaurants</button>
-    <button class="tablinks" onclick="openCity(event, 'Transportation')">Transportation</button>
-    <button class="tablinks" onclick="openCity(event, 'Hotels')">Hotels</button>
+    <button id="leisure" onclick="openTab(event, 'Leisure')"></button>
+    <button id="restaurants" onclick="openTab(event, 'Restaurants')"></button>
+    <button id="transportation" onclick="openTab(event, 'Transportation')"></button>
+    <button id="hotel" onclick="openTab(event, 'Hotels')"></button>
+    <button id="favLinks" onclick="openTab(event, 'Favourites')"></button>
   </div>
   
   <!-- Tab content -->
@@ -30,8 +31,13 @@
         <input type="text" id="destination" placeholder ="Destination" name = "destination">
         <a href="#search">Search</a>
       </nav> 
-    <h3>Restaurants</h3>
-    <p>All the Restaurants are suggested here</p>
+    <section id="Grieks">
+      <h4>Grieks Restaurant Alexandros</h4>
+      <p> stuff stuff stuff</p>
+      <button id="like" onclick="openTab(event, 'Like')"></button>
+      <button id="book" onclick="openTab(event, 'Book')">Book</button>
+    </section>
+    
   </div>
   
   <div id="Transportation" class="tabcontent">
@@ -50,6 +56,15 @@
       </nav> 
     <h3>Hotels</h3>
     <p>All the hotels are suggested here</p>
+  </div>
+
+  <div id="Favourites" class="tabcontent">
+    <nav class ="search">
+        <input type="text" id="destination" placeholder ="Destination" name = "destination">
+        <a href="#search">Search</a>
+      </nav> 
+    <h3>Favourites</h3>
+    <p>All the Favourites are suggested here</p>
   </div>
 
 </body>
