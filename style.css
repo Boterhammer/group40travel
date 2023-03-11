@@ -161,7 +161,7 @@ body {
   }
   
   body[data-lang="dutch"] .dutch {
-    display: block;
+    display: inline-block;
   }
   
   #dut_button {
