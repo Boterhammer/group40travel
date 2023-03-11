@@ -157,7 +157,7 @@ body {
   }
   
   body[data-lang="english"] .english {
-    display: block;
+    display: inline-block;
   }
   
   body[data-lang="dutch"] .dutch {
