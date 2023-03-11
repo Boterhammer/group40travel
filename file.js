@@ -146,7 +146,7 @@ function openTab(evt, tabName) {
       }
 
     function hidenshowsort(){
-      var x = document.getElementById("sortby");
+      var x = document.getElementById("srtby");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
@@ -154,7 +154,7 @@ function openTab(evt, tabName) {
       }
     }
     function hidenshowsort2(){
-        var x = document.getElementById("sortby2");
+        var x = document.getElementById("srtby2");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
@@ -162,7 +162,7 @@ function openTab(evt, tabName) {
         }
       }
       function hidenshowsort3(){
-        var x = document.getElementById("sortby3");
+        var x = document.getElementById("srtby3");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
@@ -170,7 +170,7 @@ function openTab(evt, tabName) {
         }
       }
       function hidenshowsort4(){
-        var x = document.getElementById("sortby4");
+        var x = document.getElementById("srtby4");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
