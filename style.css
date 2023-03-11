@@ -100,29 +100,50 @@ body {
         height: 35px;
         width: auto;
     }
-    #filters {
-        width: 550px;
+
+    [id^=filters] {
+        width: 700px;
         margin: auto;
         background-color: lightgray;
-        border: 1px solid black;
         overflow: hidden;
     }
-    #ranges {
+    [id^=ranges] {
+
         margin-left: 15px;
         margin-right: 15px;
         float:left;
     }
     #slider-range{
-        font-size: 50%;
+
+        font-size: 40%;
     }
     #slider-range2{
-        font-size: 50%;
+        font-size: 40%;
     }
-    #sort{
+    #slider-range3{
+        font-size: 40%;
+    }
+    #slider-range4{
+        font-size: 40%;
+    }
+    #slider-range5{
+        font-size: 40%;
+    }
+    #slider-range6{
+        font-size: 40%;
+    }
+    #slider-range7{
+        font-size: 40%;
+    }
+    #slider-range8{
+        font-size: 40%;
+    }
+    [id^=sort]{
         float:left;
         overflow:hidden;
     }
-    #checkboxes {
+    [id^=checkboxes] {
+
         float:left;
         overflow: hidden;
     }  
