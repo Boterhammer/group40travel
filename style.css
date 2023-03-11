@@ -290,13 +290,3 @@ body {
   #like {
     float: right;
   }
-
-/*Login Page*/
-.loginBox {
-    background-color : white;
-    border: 5px solid;
-    display: flex;
-    justify-content: center;
-    padding: 250px 40px;
-    vertical-align: middle;
-}
