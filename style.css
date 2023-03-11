@@ -47,7 +47,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
   }
 
   #searchBar {
@@ -62,7 +61,7 @@ body {
     border-color: #ffd580;
     border-width: thin;
     padding: 15px;
-    width: 80%;
+    width: 75%;
     align-items: center;
     justify-content: center;
     margin-left: 5%;
