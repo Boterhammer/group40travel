@@ -100,6 +100,7 @@ body {
         height: 35px;
         width: auto;
     }
+
     [id^=filters] {
         width: 700px;
         margin: auto;
@@ -107,11 +108,13 @@ body {
         overflow: hidden;
     }
     [id^=ranges] {
+
         margin-left: 15px;
         margin-right: 15px;
         float:left;
     }
     #slider-range{
+
         font-size: 40%;
     }
     #slider-range2{
@@ -140,6 +143,7 @@ body {
         overflow:hidden;
     }
     [id^=checkboxes] {
+
         float:left;
         overflow: hidden;
     }  
