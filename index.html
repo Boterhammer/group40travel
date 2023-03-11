@@ -133,25 +133,25 @@
       </div>
       <div id="sort" class ="sort">
         <h>Sort</h>
-        <button onclick ="hidenshowsort()" id="sortbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
-        <div id = sortby>
-        <div>
-          <input type="checkbox" id="recommendation" name="sorting" value="recommendation" />
-          <label for="recommendation">recommendation</label>
+        <button onclick ="hidenshowsort()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
+        <div id = srtby>
+          <div>
+            <input type="radio" id="recommendation" name="sorting" value="recommendation" />
+            <label for="recommendation">recommendation</label>
+          </div>
+          <div>
+            <input type="radio" id="price" name="sorting" value="price" />
+            <label for="price">price</label>
+          </div>
+          <div>
+            <input type="radio" id="rating" name="sorting" value="rating" />
+            <label for="rating">rating</label>
+          </div>
+          <div>
+            <input type="radio" id="distance" name="sorting" value="distance" />
+            <label for="distance">distance</label>
+          </div>              
         </div>
-        <div>
-          <input type="checkbox" id="price" name="sorting" value="price" />
-          <label for="price">price</label>
-        </div>
-        <div>
-          <input type="checkbox" id="rating" name="sorting" value="rating" />
-          <label for="rating">rating</label>
-        </div>
-        <div>
-          <input type="checkbox" id="distance" name="sorting" value="distance" />
-          <label for="distance">distance</label>
-        </div>              
-      </div>
       </div>
     </div>
   </div>
@@ -189,7 +189,7 @@
     </script>
   <script>
     function hidenshowsort(){
-      var x = document.getElementById("sortby");
+      var x = document.getElementById("srtby");
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
