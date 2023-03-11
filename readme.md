@@ -2,8 +2,8 @@
 
 Landing page: index.html
 1.A Page:
-- [ ] 1.a.1 Proper background scaling
-- [ ] 1.a.2 Remove overlap
+- [x] 1.a.1 Proper background scaling
+- [x] 1.a.2 Remove overlap
 - [ ] 1.a.3 Index-> main, remember destination
 - [ ] 1.a.4 Prototype looks
 - [ ] 1.B Login:
