@@ -10,34 +10,34 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
-    $( function() {
-      $( "#slider-range" ).slider({
+    $(function () {
+      $("#slider-range").slider({
         range: true,
         min: 0,
         max: 5,
-        values: [ 0, 5 ],
-        slide: function( event, ui ) {
-          $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        values: [0, 5],
+        slide: function (event, ui) {
+          $("#amount").val("" + ui.values[0] + " - " + ui.values[1]);
         }
       });
-      $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - " + $( "#slider-range" ).slider( "values", 1 ) );
-    } );
+      $("#amount").val("" + $("#slider-range").slider("values", 0) +
+        " - " + $("#slider-range").slider("values", 1));
+    });
   </script>
-    <script>
-      $( function() {
-        $( "#slider-range2" ).slider({
-          range: true,
-          min: 0,
-          max: 500,
-          values: [ 0, 500 ],
-          slide: function( event, ui ) {
-            $( "#amount2" ).val( "" + ui.values[ 0 ] + "km - " + ui.values[ 1 ] + "km");
-          }
-        });
-        $( "#amount2" ).val( "" + $( "#slider-range2" ).slider( "values", 0 ) +
-          "km - " + $( "#slider-range2" ).slider( "values", 1 ) +"km");
-      } );
+  <script>
+    $(function () {
+      $("#slider-range2").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [0, 500],
+        slide: function (event, ui) {
+          $("#amount2").val("" + ui.values[0] + "km - " + ui.values[1] + "km");
+        }
+      });
+      $("#amount2").val("" + $("#slider-range2").slider("values", 0) +
+        "km - " + $("#slider-range2").slider("values", 1) + "km");
+    });
   </script>
 </head>
 
@@ -45,117 +45,162 @@
 
 
 <body data-lang="english">
-  
-  <!-- <div id = "navBar"> -->
-    <ul class="search">
-      <li><a onclick="location.href='login.html';">login</a></li>
-    </ul>
-  <!-- </div> -->
-  <p id = "eng_button" onclick="changeLanguage('english')"><br></p>
-  <p id = "dut_button" onclick="changeLanguage('dutch')"><br></p>
-  <h1 id = "title"> TripToGo </h1>
 
-  <div id = searchBar>
-    <input type="text" class ="english" id="destination" placeholder="Destination" name="destination">
-    <input type="text" class ="dutch" id="destination" placeholder="Bestemming" name="destination">
-    <button id = "searchButton" onclick="location.href='main.html';"><none class="english">Search</none><none class="dutch">Zoek</none></button>
+  <!-- <div id = "navBar"> -->
+  <ul class="search">
+    <li><a onclick="location.href='login.html';">login</a></li>
+  </ul>
+  <!-- </div> -->
+  <p id="eng_button" onclick="changeLanguage('english')"><br></p>
+  <p id="dut_button" onclick="changeLanguage('dutch')"><br></p>
+  <h1 id="title"> TripToGo </h1>
+
+  <div id=searchBar>
+    <input type="text" class="english" id="destination" placeholder="Destination" name="destination">
+    <input type="text" class="dutch" id="destination" placeholder="Bestemming" name="destination">
+    <button id="searchButton" onclick="location.href='main.html';">
+      <none class="english">Search</none>
+      <none class="dutch">Zoek</none>
+    </button>
   </div>
 
 
 
   <p class="english">ENGLISH TEXT <br></p>
-  <p class="dutch" >DUTCH TEXT <br></p>
-  <div class ="filter">
+  <p class="dutch">DUTCH TEXT <br></p>
+  <div class="filter">
     <div id="initialfilter">
       <h>Filters</h>
-      <button onclick ="hidenshow()" id="filterbtn" type="submit"><img src="filter.jpg" alt="Submit"></button>
+      <button onclick="hidenshow()" id="filterbtn" type="submit"><img src="filter.jpg" alt="Submit"></button>
     </div>
-    <div class="hiddenfilters" style="display: none" id = "filters">
-      <div id ="checkboxes" class="checkboxes">
+    <div class="hiddenfilters" style="display: none" id="filters">
+      <div id="checkboxes" class="checkboxes">
         <h>Filters</h>
-        <button onclick ="hidenshow2()" id="filterbtn2" type="submit"><img src="filter.jpg" alt="Submit"></button>
-        <div id = "hidefilters">
+        <button onclick="hidenshow2()" id="filterbtn2" type="submit"><img src="filter.jpg" alt="Submit"></button>
+        <div id="hidefilters">
           <div>
             <input type="checkbox" id="learning" name="interest" value="learning" />
-            <label for="learning">Learning oppurtunities</label>
+            <label for="learning">
+              <none class="english">Learning Oppertunities</none>
+              <none class="dutch">Leerzaam</none>
+            </label>
           </div>
           <div>
             <input type="checkbox" id="child" name="interest" value="child" />
-            <label for="child">Childfriendly</label>
+            <label for="child">
+              <none class="english">Child Friendly</none>
+              <none class="dutch">Kindvriendelijk</none>
+            </label>
           </div>
           <div>
             <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-            <label for="wheelchair">wheelchair accessible</label>
+            <label for="wheelchair">
+              <none class="english">Wheelchair accessible</none>
+              <none class="dutch">Rolstoel Toegangkelijk</none>
+            </label>
           </div>
           <div>
-              <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-              <label for="alcohol">alcohol</label>
+            <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
+            <label for="alcohol">Alcohol</label>
           </div>
           <div>
             <input type="checkbox" id="pet" name="interest" value="pet" />
-            <label for="pet">petfriendly</label>
+            <label for="pet">
+              <none class="english">Pet Friendly</none>
+              <none class="dutch">Diervriendelijk</none>
+            </label>
           </div>
           <div>
             <input type="checkbox" id="romantic" name="interest" value="romantic" />
-            <label for="romantic">romantic</label>
+            <label for="romantic">
+              <none class="english">Romantic</none>
+              <none class="dutch">Romantisch</none>
+            </label>
           </div>
           <div>
             <input type="checkbox" id="safe" name="interest" value="safe" />
-            <label for="safe">Safety</label>
+            <label for="safe">
+              <none class="english">Safety</none>
+              <none class="dutch">Veiligheid</none>
+            </label>
           </div>
           <div>
             <input type="checkbox" id="group" name="interest" value="group" />
-            <label for="group">group-oriented</label>
-          </div>                
+            <label for="group">
+              <none class="english">Group-Oriented</none>
+              <none class="dutch">Groeps-Georienteerd</none>
+            </label>
+          </div>
         </div>
       </div>
 
-      <div id = "ranges">
-        <h2>Rating</h2>
+      <div id="ranges">
+        <h2>
+          <none class="english">Rating</none>
+          <none class="dutch">Beoordeling</none>
+        </h2>
         <p>
           <input type="text" id="amount">
         </p>
         <div id="slider-range"></div>
-        <h2>Distance</h2>
+        <h2>
+          <none class="english">Distance</none>
+          <none class="dutch">Afstand</none>
+        </h2>
         <p>
           <input type="text" id="amount2">
         </p>
         <div id="slider-range2"></div>
 
       </div>
-      <div id="sort" class ="sort">
-        <h>Sort</h>
-        <button onclick ="hidenshowsort()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
-        <div id = srtby>
+      <div id="sort" class="sort">
+        <h>
+          <none class="english">Sort</none>
+          <none class="dutch">Sorteer</none>
+        </h>
+        <button onclick="hidenshowsort()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
+        <div id=srtby>
           <div>
             <input type="radio" id="recommendation" name="sorting" value="recommendation" />
-            <label for="recommendation">recommendation</label>
+            <label for="recommendation">
+              <none class="english">Recommendation</none>
+              <none class="dutch">Aanbeveling</none>
+            </label>
           </div>
           <div>
             <input type="radio" id="price" name="sorting" value="price" />
-            <label for="price">price</label>
+            <label for="price">
+              <none class="english">Price</none>
+              <none class="dutch">Prijs</none>
+            </label>
           </div>
           <div>
             <input type="radio" id="rating" name="sorting" value="rating" />
-            <label for="rating">rating</label>
+            <label for="rating">
+              <none class="english">Rating</none>
+              <none class="dutch">Beoordeling</none>
+            </label>
           </div>
           <div>
             <input type="radio" id="distance" name="sorting" value="distance" />
-            <label for="distance">distance</label>
-          </div>              
+            <label for="distance">
+              <none class="english">Distance</none>
+              <none class="dutch">Afstand</none>
+            </label>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script>
-    function hidenshow(){
+    function hidenshow() {
       var x = document.getElementById("filters");
       var y = document.getElementById("initialfilter");
       if (y.style.display === "none") {
         y.style.display = "block";
       } else {
         y.style.display = "none";
-      }      
+      }
       if (x.style.display === "none") {
         x.style.display = "block";
       } else {
@@ -163,24 +208,24 @@
       }
     }
   </script>
-    <script>
-      function hidenshow2(){
-        var x = document.getElementById("hidefilters");
-        var y = document.getElementById("ranges");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-        if (y.style.display === "none") {
-          y.style.display = "block";
-        } else {
-          y.style.display = "none";
-        }     
-      }
-    </script>
   <script>
-    function hidenshowsort(){
+    function hidenshow2() {
+      var x = document.getElementById("hidefilters");
+      var y = document.getElementById("ranges");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function hidenshowsort() {
       var x = document.getElementById("srtby");
       if (x.style.display === "none") {
         x.style.display = "block";
@@ -191,7 +236,7 @@
   </script>
   <script>
     function changeLanguage(newLanguage) {
-      document.body.dataset.lang=newLanguage;
+      document.body.dataset.lang = newLanguage;
     }
   </script>
 

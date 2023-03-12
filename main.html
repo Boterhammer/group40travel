@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <title> group40travel </title> 
+  <title> group40travel </title>
   <script src="file.js"> </script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
@@ -12,9 +12,9 @@
 </head>
 
 <body>
-  <h1 id = "title" onclick="location.href='index.html';"> TripToGo </h1>
+  <h1 id="title" onclick="location.href='index.html';"> TripToGo </h1>
 
-    <!-- Tab links -->
+  <!-- Tab links -->
   <div class="tab">
     <!-- <button id="home" onclick="location.href='index.html';">Home</button>Home -->
     <button id="leisure" title="Leisure" onclick="openTab(event, 'Leisure')"></button>
@@ -26,20 +26,20 @@
 
   <div class="mainPage">
     <div id="filterSection">
-        <h3>Sort</h3>
-        <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
-        <label for="recommendation">Recommendation</label><br>
+      <h3>Sort</h3>
+      <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
+      <label for="recommendation">Recommendation</label><br>
 
-        <input type="radio" id="price" name="sorting" value="price" />
-        <label for="price">Price</label><br>
-        
-        <input type="radio" id="rating" name="sorting" value="rating" />
-        <label for="rating">Rating</label><br>
+      <input type="radio" id="price" name="sorting" value="price" />
+      <label for="price">Price</label><br>
 
-        <input type="radio" id="distance" name="sorting" value="distance" />
-        <label for="distance">Distance</label>
-      
-        <div id="filterDetailSection">
+      <input type="radio" id="rating" name="sorting" value="rating" />
+      <label for="rating">Rating</label><br>
+
+      <input type="radio" id="distance" name="sorting" value="distance" />
+      <label for="distance">Distance</label>
+
+      <div id="filterDetailSection">
         <h3>Filter</h3>
         <input type="checkbox" checked="checked">
         <label class="container">Learning Opourtunity</label><br>
@@ -84,146 +84,178 @@
         ratingOutput.innerHTML = ratingSlider.value;
         distanceOutput.innerHTML = distanceSlider.value
 
-        ratingSlider.oninput = function() { ratingOutput.innerHTML = this.value; }
-        distanceSlider.oninput = function() { distanceOutput.innerHTML = this.value; }
+        ratingSlider.oninput = function () { ratingOutput.innerHTML = this.value; }
+        distanceSlider.oninput = function () { distanceOutput.innerHTML = this.value; }
       </script>
-      </div>
-      <div id="resultSection"> 
-        <!-- Tab content -->
-        <div id="Leisure" class="tabcontent">
-          <div id="activity1">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-            <h4>Pathe Arena</h4>
-            <p> stuff stuff stuff</p>
-            <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-            <button id="like" onclick="openTab(event, 'Favourites')"></button>
-          </div>
-          <div id="activity2">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-            <h4>Pathe Arena</h4>
-            <p> stuff stuff stuff</p>
-            <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-            <button id="like" onclick="openTab(event, 'Favourites')"></button>
-          </div>
-          
-            <div id="activity3">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-            <h4>Pathe Arena</h4>
-            <p> stuff stuff stuff</p>
-            <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-            <button id="like" onclick="openTab(event, 'Favourites')"></button>
-          </div>
-
-          <div id="activity4">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-            <h4>Pathe Arena</h4>
-            <p> stuff stuff stuff</p>
-            <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-            <button id="like" onclick="openTab(event, 'Favourites')"></button>
-          </div>
+    </div>
+    <div id="resultSection">
+      <!-- Tab content -->
+      <div id="Leisure" class="tabcontent">
+        <div id="activity1">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Pathe Arena</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Favourites')"></button>
+        </div>
+        <div id="activity2">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Pathe Arena</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Favourites')"></button>
         </div>
 
-          <div id="Restaurants" class="tabcontent">
-            <div id="activity1">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Grieks Restaurant Alexandros</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity2">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Grieks Restaurant Alexandros</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity3">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Grieks Restaurant Alexandros</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity4">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Grieks Restaurant Alexandros</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-           </div>
-           
-           <div id="Transportation" class="tabcontent">
-            <div id="activity1">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>NS Trains</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity2">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>NS Trains</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity3">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>NS Trains</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity4">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>NS Trains</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-           </div>
-           
-           <div id="Hotels" class="tabcontent">
-            <div id="activity1">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Hilton</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity2">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Hilton</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity3">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Hilton</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-            <div id="activity4">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020"> <!-- Cuno change the image if you want to -->
-              <h4>Hilton</h4>
-              <p> stuff stuff stuff</p>
-              <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the website</button><!-- Jonathan change the links for the others -->
-              <button id="like" onclick="openTab(event, 'Like')"></button>
-            </div>
-           </div>
-           
-           <div id="Favourites" class="tabcontent">
-            <h3>Favourites</h3>
-            <p>All the Favourites are suggested here</p>
-           </div>
-        
+        <div id="activity3">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Pathe Arena</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Favourites')"></button>
+        </div>
 
+        <div id="activity4">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Pathe Arena</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Favourites')"></button>
+        </div>
       </div>
+
+      <div id="Restaurants" class="tabcontent">
+        <div id="activity1">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Grieks Restaurant Alexandros</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity2">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Grieks Restaurant Alexandros</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity3">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Grieks Restaurant Alexandros</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity4">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Grieks Restaurant Alexandros</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+      </div>
+
+      <div id="Transportation" class="tabcontent">
+        <div id="activity1">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>NS Trains</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity2">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>NS Trains</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity3">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>NS Trains</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity4">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>NS Trains</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+      </div>
+
+      <div id="Hotels" class="tabcontent">
+        <div id="activity1">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Hilton</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity2">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Hilton</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity3">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Hilton</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+        <div id="activity4">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMkEmVx34qcUW_8PZOSzU1xy2oeR-UN6tcwYMsw=s1360-w1360-h1020">
+          <!-- Cuno change the image if you want to -->
+          <h4>Hilton</h4>
+          <p> stuff stuff stuff</p>
+          <button id="book" onclick="window.open('https://www.pathe.nl/bioscoop/arena', '_blank')">Redirect to the
+            website</button><!-- Jonathan change the links for the others -->
+          <button id="like" onclick="openTab(event, 'Like')"></button>
+        </div>
+      </div>
+
+      <div id="Favourites" class="tabcontent">
+        <h3>Favourites</h3>
+        <p>All the Favourites are suggested here</p>
+      </div>
+
+
     </div>
+  </div>
 </body>
 
 </html>
