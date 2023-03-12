@@ -47,7 +47,7 @@ div.content {
     width: 80%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: calc(50% + 42px);
     transform: translate(-50%, -50%);
   }
   
@@ -102,7 +102,7 @@ div.content {
     /*padding: 10px; */
     /* min-width:210px; */
   }
-
+    
   #initialfilter{
     margin: 0 auto;
     margin-top: 5%;
@@ -148,14 +148,13 @@ div.content {
     }
 
     [id^=filters] {
-        /* min-width: 20%; */
-        /* max-width: 700px; */
-        /* margin: auto; */
+        min-width: 20%;
+        max-width: 700px;
+        margin: auto;
         background-color: lightgray;
         overflow: hidden;
         border-radius: 20px;
         opacity: 0.9;
-        margin-left: 25%;
     }
     [id^=ranges] {
       margin-left: 1em;
@@ -191,12 +190,11 @@ div.content {
     background-color: inherit;
     float: right;
     border: 2px solid #000000;
-    border-radius: 42px;
+    border-radius: 32px;
     outline: none;
     cursor: pointer;
     width: 60px;
     height: 60px;
-    padding: 10px 10px;
     margin: 10px;
     transition: 0.3s;
   }
@@ -207,12 +205,11 @@ div.content {
     background-color: inherit;
     float: right;
     border: 2px solid #000000;
-    border-radius: 42px;
+    border-radius: 32px;
     outline: none;
     cursor: pointer;
     width: 60px;
     height: 60px;
-    padding: 10px 10px;
     margin: 10px;
     transition: 0.3s;
   }
@@ -227,12 +224,12 @@ div.content {
     background-repeat:no-repeat;
     float: right;
     border: 2px solid #000000;
-    border-radius: 42px;
+    border-radius: 32px;
     outline: none;
     cursor: pointer;
     width: 100px;
     height: 60px;
-    padding: 10px 10px;
+    padding: 0px 8px;
     margin: 10px;
     transition: 0.3s;
   }
@@ -245,9 +242,9 @@ div.content {
     justify-content: center;
     width: 90%;
     position: absolute;
-    top: 14%;
+    top: 120px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
 
     border-radius: 8px;
     opacity: 0.8;
@@ -422,9 +419,10 @@ div.content {
 
 /* Main Page Filter */
 .mainPage #filterSection{
-  height: 600px;
+  height: calc(100vh - 250px);
+  min-height: 600px;
   width: 20%;
-  margin-top: 6%;
+  margin-top: 110px;
   margin-left: 5%;
   padding-top: 5px;
 
@@ -436,9 +434,10 @@ div.content {
 }
 
 .mainPage #resultSection {
-  height: 600px;
+  height: calc(100vh - 250px);
+  min-height: 600px;
   width: 68%;
-  margin-top: 6%;
+  margin-top: 110px;
   margin-left: 2%;
   display: inline-block;
 
