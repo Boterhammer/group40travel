@@ -80,7 +80,7 @@ div.content {
     display: inline-block;
     font-size: 16px;
     margin-left: 1%;
-    #margin-right: 3%;
+    /* #margin-right: 3%; */
     cursor: pointer;
     border-radius: 10px;
     width: 120px;
@@ -94,17 +94,16 @@ div.content {
     /* background: radial-gradient(white);
     box-shadow: 5px 10px 20px black;
     backdrop-filter: blur(30px); */
-    #background-color:
-    white;
+    /* #background-color: */
+    /* white; */
     text-align: left;
-    text-align: l;
     /* background-color: grey; */
     color: black;
     font-size: 40px;
     cursor: pointer;
     margin: auto;
     margin-top: 1em;
-    #border-radius: 10px;
+    /* #border-radius: 10px; */
     padding: 10px;
     min-width:210px;
   }
@@ -222,7 +221,7 @@ div.content {
     backdrop-filter: blur(30px);
     background-image: url("https://raw.githubusercontent.com/Boterhammer/group40travel/main/img/loginButton.svg");
     background-position:center;
-    #background-color: inherit;
+    /* #background-color: inherit; */
     background-repeat:no-repeat;
     float: right;
     border: 2px solid #000000;
