@@ -88,8 +88,12 @@ body {
   h2 {font-size: 60%; line-height:60%;}
 
   div.filter{
+    background: radial-gradient(white);
+    box-shadow: 5px 10px 20px black;
+    backdrop-filter: blur(30px);
+
     text-align: center;
-    background-color: grey;
+    /* background-color: grey; */
     color: black;
     font-size: 40px;
     cursor: pointer; 
@@ -97,7 +101,7 @@ body {
     margin-top: 23%;
     margin-left: 40%;
     margin-right: 40%;
-    border-radius: 20px;
+    border-radius: 10px;
   }
     .range-slider {
         position: relative;
@@ -311,7 +315,7 @@ body {
     backdrop-filter: blur(30px);
     border-radius: 20px;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 14%;
 }
 
 .loginBox h1 {
