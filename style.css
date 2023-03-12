@@ -98,14 +98,13 @@ div.content {
     font-size: 40px;
     cursor: pointer;
     margin: auto;*/
-    /* margin-top: 1em; */
+    margin-top: 1em;
     /*padding: 10px; */
     /* min-width:210px; */
   }
     
   #initialfilter{
     margin: 0 auto;
-    margin-top: 5%;
     background-color: white;
     opacity:0.8;
     border-radius:10px;
@@ -128,8 +127,7 @@ div.content {
 
   .hiddenfilters {
     width: 50%;
-    margin-left: 10%;;
-    margin-top: 5%;
+    margin-left: 10%;
     padding-bottom: 2%;
     padding-top: 1%;
   }
@@ -148,8 +146,8 @@ div.content {
     }
 
     [id^=filters] {
-        min-width: 20%;
-        max-width: 700px;
+        max-width: 100%;
+        width: 600px;
         margin: auto;
         background-color: lightgray;
         overflow: hidden;
@@ -242,7 +240,7 @@ div.content {
     justify-content: center;
     width: 90%;
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 50%;
     transform: translate(-50%, 0%);
 
@@ -290,33 +288,33 @@ div.content {
     background-image: url("https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png");
   }
   #like {
-    background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+    background-image: url("img/like.png");
     background-size: cover;
   }
   
   #favLinks {
-    background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+    background-image: url("img/like.png");
     background-size: cover;
     background-color: rgb(238, 46, 78);
   }
 
   #leisure {
-    background-image: url("https://static.thenounproject.com/png/2117454-200.png");
+    background-image: url("img/leisure.png");
     background-size: cover;
   }
 
   #restaurants {
-    background-image: url("https://static.thenounproject.com/png/2912457-200.png");
+    background-image: url("img/restaurants.png");
     background-size: cover;
   }
   
   #transportation {
-    background-image: url("https://static.thenounproject.com/png/5322294-200.png");
+    background-image: url("img/transit.png");
     background-size: cover;
   }
   
   #hotel {
-    background-image: url("https://static.thenounproject.com/png/633850-200.png");
+    background-image: url("img/hotels.png");
     background-size: cover;
   }
   
@@ -419,13 +417,11 @@ div.content {
 
 /* Main Page Filter */
 .mainPage #filterSection{
-  height: calc(100vh - 250px);
+  height: calc(100vh - 230px);
   min-height: 600px;
   width: 20%;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-left: 5%;
-  padding-top: 5px;
-
   background-color: white;
   opacity: 0.8;
   border-radius: 8px;
@@ -434,10 +430,10 @@ div.content {
 }
 
 .mainPage #resultSection {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 230px);
   min-height: 600px;
   width: 68%;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-left: 2%;
   display: inline-block;
 
