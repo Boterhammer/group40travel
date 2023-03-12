@@ -45,14 +45,14 @@ body {
   
   #searchBar {
     background: radial-gradient(white);
-    box-shadow: 5px 10px 20px black;
+    box-shadow: 5px 10px 20px gray;
     backdrop-filter: blur(30px);
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    /* background-color: white; */
-    /* opacity: 0.9; */
+    /* background-color: white;
+    opacity: 0.9; */
     position: absolute;
-    left: 10%;
+    left: 9%;
     top: 40%;
     width: 80%;
     /* display: inline-block; */
@@ -74,7 +74,7 @@ body {
     background-color: orange;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 20px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -89,9 +89,11 @@ body {
   h2 {font-size: 60%; line-height:60%;}
 
   div.filter{
-    background: radial-gradient(white);
+    /* background: radial-gradient(white);
     box-shadow: 5px 10px 20px black;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px); */
+    background-color: white;
+    opacity: 0.8;
 
     text-align: center;
     /* background-color: grey; */
@@ -103,11 +105,13 @@ body {
     margin-left: 40%;
     margin-right: 40%;
     border-radius: 10px;
+    padding: 10px;
   }
     .range-slider {
         position: relative;
         text-align: center;
     }
+    
     img{
         height: 35px;
         width: auto;
@@ -211,7 +215,7 @@ body {
     justify-content: center;
     width: 90%;
     position: absolute;
-    top: 17%;
+    top: 14%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -232,7 +236,7 @@ body {
     margin: 10px;
     transition: 0.3s;
   }
-  
+
   .tabcontent button {
     background-color: white;
     float: left;
@@ -255,6 +259,9 @@ body {
     background-color: #1df465;
   }
   
+  #home {
+    background-image: url("https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png");
+  }
   #like {
     background-image: url("https://static.thenounproject.com/png/5568308-200.png");
     background-size: cover;
@@ -265,13 +272,12 @@ body {
     background-size: cover;
     background-color: rgb(238, 46, 78);
   }
-  
+
   #leisure {
     background-image: url("https://static.thenounproject.com/png/2117454-200.png");
     background-size: cover;
-    
   }
-  
+
   #restaurants {
     background-image: url("https://static.thenounproject.com/png/2912457-200.png");
     background-size: cover;
@@ -288,11 +294,10 @@ body {
   }
   
   .tabcontent {
-    padding: 20px 20px;
-    border: 5px solid black;
+    /* padding: 20px 20px; */
     /* border-top: 10px solid black; */
-    display: none;
-    justify-content: center;
+    /* display: none; */
+    /* justify-content: center;
     color: black;
     position: absolute;
     top: 35%;
@@ -302,14 +307,17 @@ body {
 
     background-color: white;
     opacity: 0.8;
+     */
     border-radius: 8px;
-    /* background: radial-gradient(white);
-    box-shadow: 5px 10px 20px black;
-    backdrop-filter: blur(90px); */
+    border: ridge black;
+    margin-top: 1%;
+    height: 30%;
+    width: 85%;
+    margin-left: 8%;
+    overflow: auto;
   }
 
-  #book,
-  #like {
+  #book, #like {
     float: right;
   }
 
@@ -385,16 +393,45 @@ body {
 .mainPage #filterSection{
   height: 600px;
   width: 20%;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-left: 5%;
   padding-top: 5px;
 
   background-color: white;
   opacity: 0.8;
   border-radius: 8px;
-  /* background: radial-gradient(white);
-  box-shadow: 5px 10px 20px black;
-  backdrop-filter: blur(90px); */
+  float: left;
+  /* display: inline-block; */
+}
+
+.mainPage #resultSection {
+  height: 600px;
+  width: 68%;
+  margin-top: 6%;
+  margin-left: 2%;
+  display: inline-block;
+
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 8px;
+
+  /* max-height: fit-content; */
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #b8bdb9;
+  border-radius: 20px;
+  border: 1px black;
+  /* background-clip: content-box; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
 
 .mainPage #filterSection h3 {
@@ -407,11 +444,14 @@ body {
 
 .mainPage input[type=range]{
   margin-left: 10%;
-  width: 80%;
+  width: 65%;
 }
 
 .mainPage #filterSection p {
   text-align: center;
-  color: gray;
+  color: rgb(68, 67, 67);
   margin-top: 0;
+  display: inline;
+  margin-left: 5%;
 }
+

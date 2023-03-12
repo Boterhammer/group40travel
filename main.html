@@ -9,188 +9,20 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 5,
-      values: [ 0, 5 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - " + $( "#slider-range" ).slider( "values", 1 ) );
-} );
-</script>
-<script>
-$( function() {
-    $( "#slider-range2" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 0, 500 ],
-    slide: function( event, ui ) {
-        $( "#amount2" ).val( "" + ui.values[ 0 ] + "km - " + ui.values[ 1 ] + "km");
-    }
-    });
-    $( "#amount2" ).val( "" + $( "#slider-range2" ).slider( "values", 0 ) +
-    "km - " + $( "#slider-range2" ).slider( "values", 1 ) +"km");
-} );
-</script>
-    <script>
-$( function() {
-    $( "#slider-range3" ).slider({
-      range: true,
-      min: 0,
-      max: 5,
-      values: [ 0, 5 ],
-      slide: function( event, ui ) {
-        $( "#amount3" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount3" ).val( "" + $( "#slider-range3" ).slider( "values", 0 ) +
-    " - " + $( "#slider-range3" ).slider( "values", 1 ) );
-} );
-</script>
-    <script>
-$( function() {
-    $( "#slider-range4" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 0, 500 ],
-    slide: function( event, ui ) {
-        $( "#amount4" ).val( "" + ui.values[ 0 ] + "km - " + ui.values[ 1 ] + "km");
-    }
-    });
-    $( "#amount4" ).val( "" + $( "#slider-range4" ).slider( "values", 0 ) +
-    "km - " + $( "#slider-range4" ).slider( "values", 1 ) +"km");
-} );
-</script>
-    <script>
-$( function() {
-    $( "#slider-range5" ).slider({
-      range: true,
-      min: 0,
-      max: 5,
-      values: [ 0, 5 ],
-      slide: function( event, ui ) {
-        $( "#amount5" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount5" ).val( "" + $( "#slider-range5" ).slider( "values", 0 ) +
-    " - " + $( "#slider-range5" ).slider( "values", 1 ) );
-} );
-</script>
-    <script>
-$( function() {
-    $( "#slider-range6" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 0, 500 ],
-    slide: function( event, ui ) {
-        $( "#amount6" ).val( "" + ui.values[ 0 ] + "km - " + ui.values[ 1 ] + "km");
-    }
-    });
-    $( "#amount6" ).val( "" + $( "#slider-range6" ).slider( "values", 0 ) +
-    "km - " + $( "#slider-range6" ).slider( "values", 1 ) +"km");
-} );
-</script>
-    <script>
-$( function() {
-    $( "#slider-range7" ).slider({
-      range: true,
-      min: 0,
-      max: 5,
-      values: [ 0, 5 ],
-      slide: function( event, ui ) {
-        $( "#amount7" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount7" ).val( "" + $( "#slider-range7" ).slider( "values", 0 ) +
-    " - " + $( "#slider-range7" ).slider( "values", 1 ) );
-} );
-</script>
-    <script>
-$( function() {
-    $( "#slider-range8" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 0, 500 ],
-    slide: function( event, ui ) {
-        $( "#amount8" ).val( "" + ui.values[ 0 ] + "km - " + ui.values[ 1 ] + "km");
-    }
-    });
-    $( "#amount8" ).val( "" + $( "#slider-range8" ).slider( "values", 0 ) +
-    "km - " + $( "#slider-range8" ).slider( "values", 1 ) +"km");
-} );
-</script>
 </head>
+
 <body>
   <h1 id = "title" onclick="location.href='index.html';"> TripToGo </h1>
 
     <!-- Tab links -->
   <div class="tab">
-    <!-- <button id="home" onclick="location.href='index.html';">Home</button> -->
-    <button id="leisure" onclick="openTab(event, 'Leisure')"></button>
-    <button id="restaurants" onclick="openTab(event, 'Restaurants')"></button>
-    <button id="transportation" onclick="openTab(event, 'Transportation')"></button>
-    <button id="hotel" onclick="openTab(event, 'Hotels')"></button>
-    <button id="favLinks" onclick="openTab(event, 'Favourites')"></button>
+    <!-- <button id="home" onclick="location.href='index.html';">Home</button>Home -->
+    <div><button id="leisure" onclick="openTab(event, 'Leisure')"></button>Leisure</div>
+    <button id="restaurants" onclick="openTab(event, 'Restaurants')"></button>Restaurants
+    <button id="transportation" onclick="openTab(event, 'Transportation')"></button>Transportation
+    <button id="hotel" onclick="openTab(event, 'Hotels')"></button>Hotels
+    <button id="favLinks" onclick="openTab(event, 'Favourites')"></button>Favourites
   </div>
-
-  <!-- Tab content -->
-  <div id="Leisure" class="tabcontent">
-    <section id="Pathe">
-      <h4>Pathe Arena</h4>
-      <p> stuff stuff stuff</p>
-      <button id="book" onclick="openTab(event, 'Book')">Book</button>
-      <button id="like" onclick="openTab(event, 'Like')"></button>
-    </section>
-  </div>
-
-<div id="Restaurants" class="tabcontent">
- <section id="Grieks">
-   <h4>Grieks Restaurant Alexandros</h4>
-   <p> stuff stuff stuff</p>
-   <button id="book" onclick="openTab(event, 'Book')">Book</button>
-   <button id="like" onclick="openTab(event, 'Like')"></button>
- </section>
-
-</div>
-
-<div id="Transportation" class="tabcontent">
-   <section id="NS">
-     <h4>NS Trains</h4>
-     <p> stuff stuff stuff</p>
-     <button id="book" onclick="openTab(event, 'Book')">Book</button>
-     <button id="like" onclick="openTab(event, 'Like')"></button>
-   </section>
-   
-</div>
-
-<div id="Hotels" class="tabcontent">
-   <section id="Hilton">
-     <h4>Hilton</h4>
-     <p> stuff stuff stuff</p>
-     <button id="book" onclick="openTab(event, 'Book')">Book</button>
-     <button id="like" onclick="openTab(event, 'Like')"></button>
-   </section>
-</div>
-
-<div id="Favourites" class="tabcontent">
- <h3>Favourites</h3>
- <p>All the Favourites are suggested here</p>
-</div>
-<script>
- function changeLanguage(newLanguage) {
-   document.body.dataset.lang=newLanguage;
- }
-</script>
 
   <div class="mainPage">
     <div id="filterSection">
@@ -255,9 +87,50 @@ $( function() {
         ratingSlider.oninput = function() { ratingOutput.innerHTML = this.value; }
         distanceSlider.oninput = function() { distanceOutput.innerHTML = this.value; }
       </script>
+      </div>
+      <div id="resultSection"> 
+        <!-- Tab content -->
+        <div id="Leisure" class="tabcontent">
+          <section id="Pathe">
+            <h4>Pathe Arena</h4>
+            <p> stuff stuff stuff</p>
+            <button id="book" onclick="openTab(event, 'Book')">Book</button>
+            <button id="like" onclick="openTab(event, 'Like')"></button>
+          </section>
+        </div>
 
-      
-
+          <div id="Restaurants" class="tabcontent">
+            <section id="Grieks">
+              <h4>Grieks Restaurant Alexandros</h4>
+              <p> stuff stuff stuff</p>
+              <button id="book" onclick="openTab(event, 'Book')">Book</button>
+              <button id="like" onclick="openTab(event, 'Like')"></button>
+            </section>
+           </div>
+           
+           <div id="Transportation" class="tabcontent">
+              <section id="NS">
+                <h4>NS Trains</h4>
+                <p> stuff stuff stuff</p>
+                <button id="book" onclick="openTab(event, 'Book')">Book</button>
+                <button id="like" onclick="openTab(event, 'Like')"></button>
+              </section>
+           </div>
+           
+           <div id="Hotels" class="tabcontent">
+              <section id="Hilton">
+                <h4>Hilton</h4>
+                <p> stuff stuff stuff</p>
+                <button id="book" onclick="openTab(event, 'Book')">Book</button>
+                <button id="like" onclick="openTab(event, 'Like')"></button>
+              </section>
+           </div>
+           
+           <div id="Favourites" class="tabcontent">
+            <h3>Favourites</h3>
+            <p>All the Favourites are suggested here</p>
+           </div>
+        
 
       </div>
     </div>
