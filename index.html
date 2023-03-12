@@ -55,16 +55,16 @@
     </div>
     <div class ="filter">
       <div id="initialfilter">
-        <h>Filters</h>
+        <h3>Filters</h3>
         <button onclick ="hidenshow()" id="filterbtn" type="submit"><img src="filter.jpg" alt="Submit"></button>
       </div>
       <div class="hiddenfilters" style="display: none" id = "filters">
         <div id ="checkboxes" class="checkboxes">
-          <h>Filters</h>
-          <button onclick ="hidenshow2()" id="filterbtn2" type="submit"><img src="filter.jpg" alt="Submit"></button>
+          <h3>Filters</h3>
+          <!-- <button onclick ="hidenshow2()" id="filterbtn2" type="submit"><img src="filter.jpg" alt="Submit"></button> -->
           <div id = "hidefilters">
             <div>
-              <input type="checkbox" id="learning" name="interest" value="learning" />
+              <input type="checkbox" id="learning" name="interest" value="learning" checked ="checked"/>
               <label for="learning">Learning oppurtunities</label>
             </div>
             <div>
@@ -98,25 +98,36 @@
           </div>
         </div>
         
-        <div id = "ranges">
-          <h2>Rating</h2>
-          <p>
-            <input type="text" id="amount">
-          </p>
-          <div id="slider-range"></div>
-          <h2>Distance</h2>
-          <p>
-            <input type="text" id="amount2">
-          </p>
-          <div id="slider-range2"></div>
-  
+        <div class="indexPage" id = "ranges">
+          <h3>Rating</h3>
+          <input type="range" min="0" max="5" value="1" step="1" id="ratingRange">
+          <p><span id="rangeValue"></span> star</p>
+
+          <h3>Distance</h3>
+          <input type="range" min="0" max="20" value="5" step="0.5" id="distanceRange">
+          <p><span id="distanceValue"></span> km</p>
+
+          <script>
+            var ratingSlider = document.getElementById("ratingRange");
+            var distanceSlider = document.getElementById("distanceRange")
+
+            var ratingOutput = document.getElementById("rangeValue");
+            var distanceOutput = document.getElementById("distanceValue")
+
+            ratingOutput.innerHTML = ratingSlider.value;
+            distanceOutput.innerHTML = distanceSlider.value
+
+            ratingSlider.oninput = function() { ratingOutput.innerHTML = this.value; }
+            distanceSlider.oninput = function() { distanceOutput.innerHTML = this.value; }
+          </script>
         </div>
+        
         <div id="sort" class ="sort">
-          <h>Sort</h>
-          <button onclick ="hidenshowsort()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
+          <h3>Sort</h3>
+          <!-- <button onclick ="hidenshowsort()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button> -->
           <div id = srtby>
             <div>
-              <input type="radio" id="recommendation" name="sorting" value="recommendation" />
+              <input type="radio" id="recommendation" name="sorting" value="recommendation" checked = "checked" />
               <label for="recommendation">recommendation</label>
             </div>
             <div>
