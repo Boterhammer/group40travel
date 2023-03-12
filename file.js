@@ -1,3 +1,10 @@
+window.onload = function () {
+  defaultTab();
+};
+
+function defaultTab() {
+  document.getElementById("leisure").click();
+}
 function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, leisure, restaurants, transportation, hotel, favLinks;
