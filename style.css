@@ -290,33 +290,33 @@ div.content {
     background-image: url("https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png");
   }
   #like {
-    background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+    background-image: url("img/like.png");
     background-size: cover;
   }
   
   #favLinks {
-    background-image: url("https://static.thenounproject.com/png/5568308-200.png");
+    background-image: url("img/.png");
     background-size: cover;
     background-color: rgb(238, 46, 78);
   }
 
   #leisure {
-    background-image: url("https://static.thenounproject.com/png/2117454-200.png");
+    background-image: url("img/leisure.png");
     background-size: cover;
   }
 
   #restaurants {
-    background-image: url("https://static.thenounproject.com/png/2912457-200.png");
+    background-image: url("img/restaurants.png");
     background-size: cover;
   }
   
   #transportation {
-    background-image: url("https://static.thenounproject.com/png/5322294-200.png");
+    background-image: url("img/transit.png");
     background-size: cover;
   }
   
   #hotel {
-    background-image: url("https://static.thenounproject.com/png/633850-200.png");
+    background-image: url("img/hotels.png");
     background-size: cover;
   }
   
