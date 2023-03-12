@@ -292,11 +292,68 @@ body {
   }
 
 /*Login Page*/
-.loginBox {
-    background-color : white;
-    border: 5px solid;
-    display: flex;
-    justify-content: center;
-    padding: 250px 40px;
-    vertical-align: middle;
+.loginPage {
+  background-position: 0% -10%;
 }
+
+.loginBox {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(white);
+    box-shadow: 5px 10px 20px black;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.loginBox h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.loginBox h3,input {
+  margin-left: 30px;
+}
+.loginBox ::placeholder {
+  color: rgb(62, 61, 61);
+}
+.loginBox h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.loginBox input {
+  width: 80%;
+  height: 20px;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  border-bottom: solid white;
+  color: black;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  margin-bottom: 15px;
+}
+
+.loginBox button {
+  font-size: 20px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  background: orange;
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+.loginBox button:hover {
+  color: black;
+  background: white;
+}
+
