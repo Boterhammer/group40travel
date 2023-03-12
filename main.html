@@ -11,11 +11,13 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
-<body>
+<body data-lang="english">
   <p id="log_button" onclick="location.href='login.html'"></p>
   <p id="eng_button" onclick="changeLanguage('english')"><br></p>
+
   <p id = "dut_button" onclick="changeLanguage('dutch')"><br></p>
   <img src="img/logo.png" onclick="location.href='index.html'" style="height:84px;">
+
 
 
   <!-- Tab links -->
@@ -30,51 +32,63 @@
 
   <div class="mainPage">
     <div id="filterSection">
-      <h3>Sort</h3>
+      <h3><span class="english">Sort</span><span class="dutch">Sorteer</span></h3>
+      <!-- <h3 class="dutch">Sorteer</h3> -->
+
+
+
       <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
-      <label for="recommendation">Recommendation</label><br>
+      <label class="english" for="recommendation">Recommendation</label>
+      <label class="dutch" for="recommendation">Aanbevolen</label><br>
 
       <input type="radio" id="price" name="sorting" value="price" />
-      <label for="price">Price</label><br>
+      <label class="english" for="price">Price</label>
+      <label class="dutch" for="price">Prijs</label><br>
 
       <input type="radio" id="rating" name="sorting" value="rating" />
-      <label for="rating">Rating</label><br>
+      <label class="english" for="rating">Rating</label>
+      <label class="dutch" for="rating">Beoordeling</label><br>
 
       <input type="radio" id="distance" name="sorting" value="distance" />
-      <label for="distance">Distance</label>
+      <label class="english" for="distance">Distance</label>
+      <label class="dutch" for="rating">Afstand</label><br>
+
 
       <div id="filterDetailSection">
         <h3>Filter</h3>
-        <input type="checkbox" checked="checked">
-        <label class="container">Learning Opourtunity</label><br>
+        <!-- <div class="english"> -->
+          <input type="checkbox" checked="checked">
+          <label class="container"><span class="english">Learning Opourtunity</span><span class="dutch">Leerzaam</span></label><br>
 
-        <input type="checkbox" id="child" name="interest" value="child" />
-        <label for="child">Childfriendly</label><br>
+          <input type="checkbox" id="child" name="interest" value="child" />
+          <label for="child"><span class="english">Childfriendly</span><span class="dutch">Kindvriendelijk</span></label><br>
 
-        <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-        <label for="wheelchair">Wheelchair accessible</label><br>
+          <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
+          <label for="wheelchair"><span class="english">Wheelchair accessible</span><span class="dutch">Rolstoeltoegankelijk</span></label><br>
 
-        <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-        <label for="alcohol">Alcohol</label><br>
+          <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
+          <label for="alcohol">Alcohol</label><br>
 
-        <input type="checkbox" id="pet" name="interest" value="pet" />
-        <label for="pet">Pet-friendly</label><br>
+          <input type="checkbox" id="pet" name="interest" value="pet" />
+          <label for="pet"><span class="english">Petfriendly</span><span class="dutch">Diervriendelijk</span></label><br>
 
-        <input type="checkbox" id="romantic" name="interest" value="romantic" />
-        <label for="romantic">Romantic</label><br>
+          <input type="checkbox" id="romantic" name="interest" value="romantic" />
+          <label for="romantic"><span class="english">Romantic</span><span class="dutch">Romantisch</span></label><br>
 
-        <input type="checkbox" id="safe" name="interest" value="safe" />
-        <label for="safe">Safety</label><br>
+          <input type="checkbox" id="safe" name="interest" value="safe" />
+          <label for="safe"><span class="english">Safe</span><span class="dutch">Velig</span></label><br>
 
-        <input type="checkbox" id="group" name="interest" value="group" />
-        <label for="group">Group-oriented</label><br>
+          <input type="checkbox" id="group" name="interest" value="group" />
+          <label for="group"><span class="english">group-oriented</span><span class="dutch">Groepsgeorienteerd</span></label><br>
+
       </div>
 
-      <h3>Rating</h3>
-      <input type="range" min="0" max="5" value="1" step="0.5" id="ratingRange">
-      <p><span id="rangeValue"></span> star</p>
 
-      <h3>Distance</h3>
+      <h3><span class="english">Rating</span><span class="dutch">Beoordeling</span></h3>
+      <input type="range" min="0" max="5" value="1" step="0.5" id="ratingRange">
+      <p><span id="rangeValue"></span> <span class="english">stars</span><span class="dutch">sterren</span></p>
+
+      <h3><span class="english">Distance</span><span class="dutch">Afstand</span></h3>
       <input type="range" min="0" max="20" value="5" step="0.5" id="distanceRange">
       <p><span id="distanceValue"></span> km</p>
 
