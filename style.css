@@ -293,7 +293,7 @@ div.content {
   }
   
   #favLinks {
-    background-image: url("img/.png");
+    background-image: url("img/like.png");
     background-size: cover;
     background-color: rgb(238, 46, 78);
   }
