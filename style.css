@@ -293,21 +293,7 @@ body {
     background-size: cover;
   }
   
-  .tabcontent {
-    /* padding: 20px 20px; */
-    /* border-top: 10px solid black; */
-    /* display: none; */
-    /* justify-content: center;
-    color: black;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 790px;
-    transform: translate(-50%, -50%);
-
-    background-color: white;
-    opacity: 0.8;
-     */
+  #activity1, #activity2, #activity3, #activity4, #Favourites {
     border-radius: 8px;
     border: ridge black;
     margin-top: 1%;
@@ -317,8 +303,23 @@ body {
     overflow: auto;
   }
 
-  #book, #like {
+  #like {
+    width: 50px;
+    height: 50px;
     float: right;
+  }
+
+  #book {
+    width: 100px;
+    height: 50px;
+    float: right;
+  }
+
+  #activity1 > img, #activity2 > img, #activity3 > img, #activity4 > img{  /* Change the size of the image or whatever*/ 
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-right: 10px;
   }
 
 /*Login Page*/
