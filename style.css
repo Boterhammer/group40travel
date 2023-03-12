@@ -108,6 +108,13 @@ div.content {
     padding: 10px;
     min-width:210px;
   }
+  #initialfilter{
+    margin: 0 auto;
+    background-color: white;
+    opacity:0.8;
+    border-radius:10px;
+    width:200px;
+  }
    p.filterSlider{
      margin: 0.5em 0;
    }
