@@ -131,459 +131,136 @@ $( function() {
 </script>
 </head>
 <body>
-  <h1 id = "title"> TripToGo </h1>
-  <!-- Tab links -->
-<div class="tab">
-    <button id="home" onclick="location.href='index.html';">Home</button>
+  <h1 id = "title" onclick="location.href='index.html';"> TripToGo </h1>
+
+    <!-- Tab links -->
+  <div class="tab">
+    <!-- <button id="home" onclick="location.href='index.html';">Home</button> -->
     <button id="leisure" onclick="openTab(event, 'Leisure')"></button>
     <button id="restaurants" onclick="openTab(event, 'Restaurants')"></button>
     <button id="transportation" onclick="openTab(event, 'Transportation')"></button>
     <button id="hotel" onclick="openTab(event, 'Hotels')"></button>
     <button id="favLinks" onclick="openTab(event, 'Favourites')"></button>
   </div>
-  
+
   <!-- Tab content -->
   <div id="Leisure" class="tabcontent">
-     <!--<nav class ="search">
-        <input type="text" id="destination" placeholder ="Destination" name = "destination">
-        <a href="#search">Search</a>
-      </nav> -->
-      <section id="Pathe">
-        <h4>Pathe Arena</h4>
-        <p> stuff stuff stuff</p>
-        <button id="book" onclick="openTab(event, 'Book')">Book</button>
-        <button id="like" onclick="openTab(event, 'Like')"></button>
-      </section>
-      <section id="Filters">
-            <div id="initialfilter">
-              <div>
-              <h>Filters</h>
-              </div>
-              <div>
-              <button onclick ="hidenshow()" id="filterbtn" type="submit"><img src="filter.jpg" alt="Submit"></button>
-              </div>
-            </div>
-            <div class="hiddenfilters" style="display: none" id = "filters">
-              <div id ="checkboxes" class="checkboxes">
-                <div>
-                <h>Filters</h>
-                </div>
-                <div>
-                <button onclick ="hidenshowafter()" id="filterbtn2" type="submit"><img src="filter.jpg" alt="Submit"></button>
-                </div>
-                <div id = "hidefilters">
-                  <div>
-                    <input type="checkbox" id="learning" name="interest" value="learning" />
-                    <label for="learning">Learning oppurtunities</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="child" name="interest" value="child" />
-                    <label for="child">Childfriendly</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-                    <label for="wheelchair">wheelchair accessible</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-                      <label for="alcohol">alcohol</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="pet" name="interest" value="pet" />
-                    <label for="pet">petfriendly</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="romantic" name="interest" value="romantic" />
-                    <label for="romantic">romantic</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="safe" name="interest" value="safe" />
-                    <label for="safe">Safety</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="group" name="interest" value="group" />
-                    <label for="group">group-oriented</label>
-                  </div>
-                </div>
-              </div>
-
-              <div id = "ranges">
-                <h2>Rating</h2>
-                <p>
-                  <input type="text" id="amount">
-                </p>
-                <div id="slider-range"></div>
-                <h2>Distance</h2>
-                <p>
-                  <input type="text" id="amount2">
-                </p>
-                <div id="slider-range2"></div>
-
-              </div>
-              <div id="sort" class ="sort">
-                <div>
-                <h>Sort</h>
-                </div>
-                <div>
-                <button onclick ="hidenshowsort()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
-                </div>
-                <div id = srtby>
-                <div>
-                  <input type="radio" id="recommendation" name="sorting" value="recommendation" />
-                  <label for="recommendation">recommendation</label>
-                </div>
-                <div>
-                  <input type="radio" id="price" name="sorting" value="price" />
-                  <label for="price">price</label>
-                </div>
-                <div>
-                  <input type="radio" id="rating" name="sorting" value="rating" />
-                  <label for="rating">rating</label>
-                </div>
-                <div>
-                  <input type="radio" id="distance" name="sorting" value="distance" />
-                  <label for="distance">distance</label>
-                </div>
-              </div>
-              </div>
-            </div>
-      </section>
-  </div>
-  
-  <div id="Restaurants" class="tabcontent">
-    <!--<nav class ="search">
-        <input type="text" id="destination" placeholder ="Destination" name = "destination">
-        <a href="#search">Search</a>
-      </nav> -->
-    <section id="Grieks">
-      <h4>Grieks Restaurant Alexandros</h4>
+    <section id="Pathe">
+      <h4>Pathe Arena</h4>
       <p> stuff stuff stuff</p>
       <button id="book" onclick="openTab(event, 'Book')">Book</button>
       <button id="like" onclick="openTab(event, 'Like')"></button>
     </section>
-    <section id="Filters2">
-        <div id="initialfilter2">
-          <div>
-          <h>Filters</h>
-          </div>
-          <div>
-          <button onclick ="hidenshow2()" id="filterbtn3" type="submit"><img src="filter.jpg" alt="Submit"></button>
-          </div>
-        </div>
-        <div class="hiddenfilters" style="display: none" id = "filters2">
-          <div id ="checkboxes" class="checkboxes">
-            <div>
-            <h>Filters</h>
-            </div>
-            <div>
-            <button onclick ="hidenshowafter2()" id="filterbtn4" type="submit"><img src="filter.jpg" alt="Submit"></button>
-            </div>
-            <div id = "hidefilters2">
-              <div>
-                <input type="checkbox" id="learning" name="interest" value="learning" />
-                <label for="learning">Learning oppurtunities</label>
-              </div>
-              <div>
-                <input type="checkbox" id="child" name="interest" value="child" />
-                <label for="child">Childfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-                <label for="wheelchair">wheelchair accessible</label>
-              </div>
-              <div>
-                  <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-                  <label for="alcohol">alcohol</label>
-              </div>
-              <div>
-                <input type="checkbox" id="pet" name="interest" value="pet" />
-                <label for="pet">petfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="romantic" name="interest" value="romantic" />
-                <label for="romantic">romantic</label>
-              </div>
-              <div>
-                <input type="checkbox" id="safe" name="interest" value="safe" />
-                <label for="safe">Safety</label>
-              </div>
-              <div>
-                <input type="checkbox" id="group" name="interest" value="group" />
-                <label for="group">group-oriented</label>
-              </div>                
-            </div>
-          </div>
-    
-          <div id = "ranges2">
-            <h2>Rating</h2>
-            <p>
-              <input type="text" id="amount3">
-            </p>
-            <div id="slider-range3"></div>
-            <h2>Distance</h2>
-            <p>
-              <input type="text" id="amount4">
-            </p>
-            <div id="slider-range4"></div>
-    
-          </div>
-          <div id="sort2" class ="sort">
-            <div>
-            <h>Sort</h>
-            </div>
-            <div>
-            <button onclick ="hidenshowsort2()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
-            </div>
-            <div id = srtby2>
-            <div>
-              <input type="radio" id="recommendation" name="sorting" value="recommendation" />
-              <label for="recommendation">recommendation</label>
-            </div>
-            <div>
-              <input type="radio" id="price" name="sorting" value="price" />
-              <label for="price">price</label>
-            </div>
-            <div>
-              <input type="radio" id="rating" name="sorting" value="rating" />
-              <label for="rating">rating</label>
-            </div>
-            <div>
-              <input type="radio" id="distance" name="sorting" value="distance" />
-              <label for="distance">distance</label>
-            </div>              
-          </div>
-          </div>
-        </div>
-  </section>
-  </div>
-  
-  <div id="Transportation" class="tabcontent">
-    <!--<nav class ="search">
-        <input type="text" id="destination" placeholder ="Destination" name = "destination">
-        <a href="#search">Search</a>
-      </nav> -->
-      <section id="NS">
-        <h4>NS Trains</h4>
-        <p> stuff stuff stuff</p>
-        <button id="book" onclick="openTab(event, 'Book')">Book</button>
-        <button id="like" onclick="openTab(event, 'Like')"></button>
-      </section>
-      <section id="Filters3">
-        <div id="initialfilter3">
-          <div>
-          <h>Filters</h>
-          </div>
-          <div>
-          <button onclick ="hidenshow3()" id="filterbtn5" type="submit"><img src="filter.jpg" alt="Submit"></button>
-          </div>
-        </div>
-        <div class="hiddenfilters" style="display: none" id = "filters3">
-          <div id ="checkboxes" class="checkboxes">
-            <div>
-            <h>Filters</h>
-            </div>
-            <div>
-            <button onclick ="hidenshowafter3()" id="filterbtn6" type="submit"><img src="filter.jpg" alt="Submit"></button>
-            </div>
-            <div id = "hidefilters3">
-              <div>
-                <input type="checkbox" id="learning" name="interest" value="learning" />
-                <label for="learning">Learning oppurtunities</label>
-              </div>
-              <div>
-                <input type="checkbox" id="child" name="interest" value="child" />
-                <label for="child">Childfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-                <label for="wheelchair">wheelchair accessible</label>
-              </div>
-              <div>
-                  <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-                  <label for="alcohol">alcohol</label>
-              </div>
-              <div>
-                <input type="checkbox" id="pet" name="interest" value="pet" />
-                <label for="pet">petfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="romantic" name="interest" value="romantic" />
-                <label for="romantic">romantic</label>
-              </div>
-              <div>
-                <input type="checkbox" id="safe" name="interest" value="safe" />
-                <label for="safe">Safety</label>
-              </div>
-              <div>
-                <input type="checkbox" id="group" name="interest" value="group" />
-                <label for="group">group-oriented</label>
-              </div>                
-            </div>
-          </div>
-    
-          <div id = "ranges3">
-            <h2>Rating</h2>
-            <p>
-              <input type="text" id="amount5">
-            </p>
-            <div id="slider-range5"></div>
-            <h2>Distance</h2>
-            <p>
-              <input type="text" id="amount6">
-            </p>
-            <div id="slider-range6"></div>
-    
-          </div>
-          <div id="sort3" class ="sort">
-            <div>
-            <h>Sort</h>
-            </div>
-            <div>
-            <button onclick ="hidenshowsort3()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
-            </div>
-            <div id = srtby3>
-            <div>
-              <input type="radio" id="recommendation" name="sorting" value="recommendation" />
-              <label for="recommendation">recommendation</label>
-            </div>
-            <div>
-              <input type="radio" id="price" name="sorting" value="price" />
-              <label for="price">price</label>
-            </div>
-            <div>
-              <input type="radio" id="rating" name="sorting" value="rating" />
-              <label for="rating">rating</label>
-            </div>
-            <div>
-              <input type="radio" id="distance" name="sorting" value="distance" />
-              <label for="distance">distance</label>
-            </div>              
-          </div>
-          </div>
-        </div>
-  </section>
   </div>
 
-  <div id="Hotels" class="tabcontent">
-    <!--<nav class ="search">
-        <input type="text" id="destination" placeholder ="Destination" name = "destination">
-        <a href="#search">Search</a>
-      </nav> -->
-      <section id="Hilton">
-        <h4>Hilton</h4>
-        <p> stuff stuff stuff</p>
-        <button id="book" onclick="openTab(event, 'Book')">Book</button>
-        <button id="like" onclick="openTab(event, 'Like')"></button>
-      </section>
-      <section id="Filters4">
-        <div id="initialfilter4">
-          <div>
-          <h>Filters</h>
-          </div>
-          <div>
-          <button onclick ="hidenshow4()" id="filterbtn7" type="submit"><img src="filter.jpg" alt="Submit"></button>
-          </div>
-        </div>
-        <div class="hiddenfilters" style="display: none" id = "filters4">
-          <div id ="checkboxes" class="checkboxes">
-            <div>
-            <h>Filters</h>
-            </div>
-            <div>
-            <button onclick ="hidenshowafter4()" id="filterbtn8" type="submit"><img src="filter.jpg" alt="Submit"></button>
-            </div>
-            <div id = "hidefilters4">
-              <div>
-                <input type="checkbox" id="learning" name="interest" value="learning" />
-                <label for="learning">Learning oppurtunities</label>
-              </div>
-              <div>
-                <input type="checkbox" id="child" name="interest" value="child" />
-                <label for="child">Childfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-                <label for="wheelchair">wheelchair accessible</label>
-              </div>
-              <div>
-                  <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-                  <label for="alcohol">alcohol</label>
-              </div>
-              <div>
-                <input type="checkbox" id="pet" name="interest" value="pet" />
-                <label for="pet">petfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="romantic" name="interest" value="romantic" />
-                <label for="romantic">romantic</label>
-              </div>
-              <div>
-                <input type="checkbox" id="safe" name="interest" value="safe" />
-                <label for="safe">Safety</label>
-              </div>
-              <div>
-                <input type="checkbox" id="group" name="interest" value="group" />
-                <label for="group">group-oriented</label>
-              </div>                
-            </div>
-          </div>
-    
-          <div id = "ranges4">
-            <h2>Rating</h2>
-            <p>
-              <input type="text" id="amount7">
-            </p>
-            <div id="slider-range7"></div>
-            <h2>Distance</h2>
-            <p>
-              <input type="text" id="amount8">
-            </p>
-            <div id="slider-range8"></div>
-    
-          </div>
-          <div id="sort4" class ="sort">
-            <div>
-            <h>Sort</h>
-            </div>
-            <div>
-            <button onclick ="hidenshowsort4()" id="srtbtn" type="submit"><img src="sort.jpg" alt="Submit"></button>
-            </div>
-            <div id = srtby4>
-            <div>
-              <input type="radio" id="recommendation" name="sorting" value="recommendation" />
-              <label for="recommendation">recommendation</label>
-            </div>
-            <div>
-              <input type="radio" id="price" name="sorting" value="price" />
-              <label for="price">price</label>
-            </div>
-            <div>
-              <input type="radio" id="rating" name="sorting" value="rating" />
-              <label for="rating">rating</label>
-            </div>
-            <div>
-              <input type="radio" id="distance" name="sorting" value="distance" />
-              <label for="distance">distance</label>
-            </div>              
-          </div>
-          </div>
-        </div>
-  </section>
-  </div>
+<div id="Restaurants" class="tabcontent">
+ <section id="Grieks">
+   <h4>Grieks Restaurant Alexandros</h4>
+   <p> stuff stuff stuff</p>
+   <button id="book" onclick="openTab(event, 'Book')">Book</button>
+   <button id="like" onclick="openTab(event, 'Like')"></button>
+ </section>
 
-  <div id="Favourites" class="tabcontent">
-    <!--<nav class ="search">
-        <input type="text" id="destination" placeholder ="Destination" name = "destination">
-        <a href="#search">Search</a>
-      </nav> -->
-    <h3>Favourites</h3>
-    <p>All the Favourites are suggested here</p>
-  </div>
-  <script>
-    function changeLanguage(newLanguage) {
-      document.body.dataset.lang=newLanguage;
-    }
-  </script>
+</div>
+
+<div id="Transportation" class="tabcontent">
+   <section id="NS">
+     <h4>NS Trains</h4>
+     <p> stuff stuff stuff</p>
+     <button id="book" onclick="openTab(event, 'Book')">Book</button>
+     <button id="like" onclick="openTab(event, 'Like')"></button>
+   </section>
+   
+</div>
+
+<div id="Hotels" class="tabcontent">
+   <section id="Hilton">
+     <h4>Hilton</h4>
+     <p> stuff stuff stuff</p>
+     <button id="book" onclick="openTab(event, 'Book')">Book</button>
+     <button id="like" onclick="openTab(event, 'Like')"></button>
+   </section>
+</div>
+
+<div id="Favourites" class="tabcontent">
+ <h3>Favourites</h3>
+ <p>All the Favourites are suggested here</p>
+</div>
+<script>
+ function changeLanguage(newLanguage) {
+   document.body.dataset.lang=newLanguage;
+ }
+</script>
+
+  <div class="mainPage">
+    <div id="filterSection">
+        <h3>Sort</h3>
+        <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
+        <label for="recommendation">Recommendation</label><br>
+
+        <input type="radio" id="price" name="sorting" value="price" />
+        <label for="price">Price</label><br>
+        
+        <input type="radio" id="rating" name="sorting" value="rating" />
+        <label for="rating">Rating</label><br>
+
+        <input type="radio" id="distance" name="sorting" value="distance" />
+        <label for="distance">Distance</label>
+      
+        <div id="filterDetailSection">
+        <h3>Filter</h3>
+        <input type="checkbox" checked="checked">
+        <label class="container">Learning Opourtunity</label><br>
+
+        <input type="checkbox" id="child" name="interest" value="child" />
+        <label for="child">Childfriendly</label><br>
+
+        <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
+        <label for="wheelchair">Wheelchair accessible</label><br>
+
+        <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
+        <label for="alcohol">Alcohol</label><br>
+
+        <input type="checkbox" id="pet" name="interest" value="pet" />
+        <label for="pet">Pet-friendly</label><br>
+
+        <input type="checkbox" id="romantic" name="interest" value="romantic" />
+        <label for="romantic">Romantic</label><br>
+
+        <input type="checkbox" id="safe" name="interest" value="safe" />
+        <label for="safe">Safety</label><br>
+
+        <input type="checkbox" id="group" name="interest" value="group" />
+        <label for="group">Group-oriented</label><br>
+      </div>
+
+      <h3>Rating</h3>
+      <input type="range" min="0" max="5" value="1" step="1" id="ratingRange">
+      <p><span id="rangeValue"></span> star</p>
+
+      <h3>Distance</h3>
+      <input type="range" min="0" max="20" value="5" step="0.5" id="distanceRange">
+      <p><span id="distanceValue"></span> km</p>
+
+      <script>
+        var ratingSlider = document.getElementById("ratingRange");
+        var distanceSlider = document.getElementById("distanceRange")
+
+        var ratingOutput = document.getElementById("rangeValue");
+        var distanceOutput = document.getElementById("distanceValue")
+
+        ratingOutput.innerHTML = ratingSlider.value;
+        distanceOutput.innerHTML = distanceSlider.value
+
+        ratingSlider.oninput = function() { ratingOutput.innerHTML = this.value; }
+        distanceSlider.oninput = function() { distanceOutput.innerHTML = this.value; }
+      </script>
+
+      
+
+
+      </div>
+    </div>
 </body>
 
 </html>

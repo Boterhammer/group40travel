@@ -15,6 +15,7 @@ body {
     font-size: 60px;
     margin-left: 2%;
     margin-top: 0;
+    cursor: pointer;
   }
   
   .search ul {
@@ -154,7 +155,6 @@ body {
         overflow:hidden;
     }
     [id^=checkboxes] {
-
         float:left;
         overflow: hidden;
     }  
@@ -209,11 +209,14 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: 90%;
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    border-radius: 8px;
+    opacity: 0.8;
   }
   
   .tab button {
@@ -266,6 +269,7 @@ body {
   #leisure {
     background-image: url("https://static.thenounproject.com/png/2117454-200.png");
     background-size: cover;
+    
   }
   
   #restaurants {
@@ -284,19 +288,26 @@ body {
   }
   
   .tabcontent {
-    padding: 6px 10px;
-    border: 10px solid black;
-    border-top: 10px solid black;
+    padding: 20px 20px;
+    border: 5px solid black;
+    /* border-top: 10px solid black; */
     display: none;
     justify-content: center;
     color: black;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     width: 790px;
     transform: translate(-50%, -50%);
+
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 8px;
+    /* background: radial-gradient(white);
+    box-shadow: 5px 10px 20px black;
+    backdrop-filter: blur(90px); */
   }
-  
+
   #book,
   #like {
     float: right;
@@ -310,9 +321,11 @@ body {
 .loginBox {
     width: 400px;
     height: 400px;
-    background: radial-gradient(white);
+    background-color: white;
+    opacity: 0.8;
+    /* background: radial-gradient(white);
     box-shadow: 5px 10px 20px black;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px); */
     border-radius: 20px;
     margin: auto;
     margin-top: 14%;
@@ -343,7 +356,7 @@ body {
   border-left: none;
   border-right: none;
   background: transparent;
-  border-bottom: solid white;
+  border-bottom: solid black;
   color: black;
   letter-spacing: 1px;
   padding-bottom: 3px;
@@ -368,3 +381,37 @@ body {
   background: white;
 }
 
+/* Main Page Filter */
+.mainPage #filterSection{
+  height: 600px;
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 5%;
+  padding-top: 5px;
+
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 8px;
+  /* background: radial-gradient(white);
+  box-shadow: 5px 10px 20px black;
+  backdrop-filter: blur(90px); */
+}
+
+.mainPage #filterSection h3 {
+  text-align: center;
+}
+
+.mainPage #filterSection input,label {
+  font-size: 15px;
+}
+
+.mainPage input[type=range]{
+  margin-left: 10%;
+  width: 80%;
+}
+
+.mainPage #filterSection p {
+  text-align: center;
+  color: gray;
+  margin-top: 0;
+}
