@@ -265,6 +265,9 @@ div.content {
     transition: 0.3s;
   }
 
+  .tabcontent img{
+    cursor: pointer;
+  }
   .tabcontent button {
     background-color: white;
     float: left;
@@ -526,7 +529,7 @@ div.content {
 }
 
 .inspectContent {
-  width:90%
+  width:90%;
   margin: auto;
   background-color:#ffffff99;
   backdrop-filter:blur(5px);
@@ -561,18 +564,18 @@ div.content {
   height:50px;
   float:right;
   margin:15px;
-  display:inline-block;
+  /* display:inline-block; */
 }
 .inspectBar > .barContent{
   float:right;
-  display:inline-block;
+  /* display:inline-block; */
 }
 .inspectBar > .barContent > button {
     height: 60px;
     float:right;
     margin:10px;
     padding: 10px;
-    display:inline-block;
+    /* display:inline-block; */
     border-radius: 30px;
     background-color:#ffa500;
     color:#ffffff;
@@ -585,12 +588,12 @@ div.content {
     float:right;
     margin:10px;
     padding: 10px;
-    display:inline-block;
+    /* display:inline-block; */
     border-radius: 10px;
     background-color:#ffa500;
     color:#ffffff;
     font-weight: bold;
-    object-size:cover;
+    /* object-size:cover; */
     object-position:center;
 }
 
@@ -603,7 +606,7 @@ div.content {
 }
 .inspectRating {
   width:200px;
-  display:inline-block;
+  /* display:inline-block; */
   float:right;
   margin-right:5%;
   text-align:center;
