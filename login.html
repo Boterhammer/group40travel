@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,22 +10,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
-    <p id = "eng_button" onclick="changeLanguage('english')"><br></p>
-    <p id = "dut_button" onclick="changeLanguage('dutch')"><br></p>
-    <img src="img/logo.png" onclick="location.href='index.html'" style="height:84px;">
-    <h1 id = "title" onclick="location.href='index.html';"> TripToGo </h1>
-    <div class="loginBox">
-        <h1>Login</h1>
+<body data-lang="english">
+<p id="eng_button" onclick="changeLanguage('english')"><br></p>
+<p id="dut_button" onclick="changeLanguage('dutch')"><br></p>
+<img src="img/logo.png" onclick="location.href='index.html'" style="height:84px;">
+<h1 id="title" onclick="location.href='index.html';"> TripToGo </h1>
+<div class="loginBox">
+    <h1><span class="english">Login</span><span class="dutch">Inloggen</span></h1>
 
-        <h3>Email : </h3>
-        <input type="email" name="" placeholder="Type your email">
-        <h3>Password : </h3>
-        <input type="password" name="" placeholder="Type your password">
+    <h3>Email : </h3>
+    <input class="english" type="password" name="" placeholder="Type your email">
+    <input class="dutch" type="password" name="" placeholder="Type uw email">
+    <h3 class="english">Password : </h3>
+    <h3 class="dutch">Wachtwoord : </h3>
+    <input class="english" type="password" name="" placeholder="Type your password">
+    <input class="dutch" type="password" name="" placeholder="Type uw wachtwoord">
 
-        <button onclick="location.href='index.html';">LOGIN</button>
-        <div id="registerSection"><a onclick="location.href='register.html';">Register</a></div>
+    <button onclick="location.href='index.html';"><span class="english">LOGIN</span><span class="dutch">INLOGGEN</span></button>
+    <div id="registerSection"><a onclick="location.href='register.html';"><span class="english">Register</span><span
+        class="dutch">Aanmelden</span></a></div>
 
-    </div>
-
+</div>
+<script>
+    function changeLanguage(newLanguage) {
+        document.body.dataset.lang = newLanguage;
+    }
+</script>
 </body>
+
 </html>
