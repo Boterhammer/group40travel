@@ -45,8 +45,8 @@
 <body data-lang="english">
   <p id="log_button" onclick="location.href='login.html'"></p>
 
-  <p id = "eng_button" onclick="changeLanguage('english')"><br></p>
-  <p id = "dut_button" onclick="changeLanguage('dutch')"><br></p>
+  <p id="eng_button" onclick="changeLanguage('english')"><br></p>
+  <p id="dut_button" onclick="changeLanguage('dutch')"><br></p>
   <img src="img/logo.png" onclick="location.href='index.html'" style="height:84px;">
 
   <div class="content">
@@ -68,74 +68,46 @@
           <h3>Filters</h3>
           <!-- <button onclick ="hidenshow2()" id="filterbtn2" type="submit"><img src="img/filter.jpg" alt="Submit"></button> -->
           <div id="hidefilters">
-            <div class=english>
-              <div>
-                <input type="checkbox" id="learning" name="interest" value="learning" checked="checked" />
-                <label for="learning">Learning oppurtunities</label>
-              </div>
-              <div>
-                <input type="checkbox" id="child" name="interest" value="child" />
-                <label for="child">Childfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-                <label for="wheelchair">wheelchair accessible</label>
-              </div>
-              <div>
-                <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-                <label for="alcohol">alcohol</label>
-              </div>
-              <div>
-                <input type="checkbox" id="pet" name="interest" value="pet" />
-                <label for="pet">petfriendly</label>
-              </div>
-              <div>
-                <input type="checkbox" id="romantic" name="interest" value="romantic" />
-                <label for="romantic">romantic</label>
-              </div>
-              <div>
-                <input type="checkbox" id="safe" name="interest" value="safe" />
-                <label for="safe">Safety</label>
-              </div>
-              <div>
-                <input type="checkbox" id="group" name="interest" value="group" />
-                <label for="group">group-oriented</label>
-              </div>
+
+            <div>
+              <input type="checkbox" id="learning" name="interest" value="learning" checked="checked" />
+              <label for="learning"><span class="english">Learning Opourtunity</span><span
+                  class="dutch">Leerzaam</span></label>
             </div>
-            <div class=dutch>
-              <div>
-                <input type="checkbox" id="learning" name="interest" value="learning" checked="checked" />
-                <label for="learning">Leerzaam</label>
-              </div>
-              <div>
-                <input type="checkbox" id="child" name="interest" value="child" />
-                <label for="child">Kindvriendelijk</label>
-              </div>
-              <div>
-                <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
-                <label for="wheelchair">Rolstoeltoegankelijk</label>
-              </div>
-              <div>
-                <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
-                <label for="alcohol">alcohol</label>
-              </div>
-              <div>
-                <input type="checkbox" id="pet" name="interest" value="pet" />
-                <label for="pet">diervriendelijk</label>
-              </div>
-              <div>
-                <input type="checkbox" id="romantic" name="interest" value="romantic" />
-                <label for="romantic">romantisch</label>
-              </div>
-              <div>
-                <input type="checkbox" id="safe" name="interest" value="safe" />
-                <label for="safe">veligheid</label>
-              </div>
-              <div>
-                <input type="checkbox" id="group" name="interest" value="group" />
-                <label for="group">groepsgeorienteerd</label>
-              </div>
+            <div>
+              <input type="checkbox" id="child" name="interest" value="child" />
+              <label for="child"><span class="english">Childfriendly</span><span
+                  class="dutch">Kindvriendelijk</span></label>
             </div>
+            <div>
+              <input type="checkbox" id="wheelchair" name="interest" value="wheelchair" />
+              <label for="wheelchair"><span class="english">Wheelchair accessible</span><span
+                  class="dutch">Rolstoeltoegankelijk</span></label>
+            </div>
+            <div>
+              <input type="checkbox" id="alcohol" name="interest" value="alcohol" />
+              <label for="alcohol">alcohol</label>
+            </div>
+            <div>
+              <input type="checkbox" id="pet" name="interest" value="pet" />
+              <label for="pet"><span class="english">Petfriendly</span><span
+                  class="dutch">Diervriendelijk</span></label>
+            </div>
+            <div>
+              <input type="checkbox" id="romantic" name="interest" value="romantic" />
+              <label for="romantic"><span class="english">Romantic</span><span class="dutch">Romantisch</span></label>
+            </div>
+            <div>
+              <input type="checkbox" id="safe" name="interest" value="safe" />
+              <label for="safe"><span class="english">Safe</span><span class="dutch">Velig</span></label>
+            </div>
+            <div>
+              <input type="checkbox" id="group" name="interest" value="group" />
+              <label for="group"><span class="english">group-oriented</span><span
+                  class="dutch">Groepsgeorienteerd</span></label>
+            </div>
+
+
           </div>
         </div>
 
@@ -143,7 +115,7 @@
           <h3 class="english">Rating</h3>
           <h3 class="dutch">Beoordeling</h3>
           <input type="range" min="0" max="5" value="1" step="0.5" id="ratingRange">
-          <p><span id="rangeValue"></span> stars</p>
+          <p><span id="rangeValue"></span> <span class="english">stars</span><span class="dutch">sterren</span></p>
 
           <h3 class="english">Distance</h3>
           <h3 class="dutch">Afstand</h3>
@@ -170,41 +142,26 @@
           <h3>Sort</h3>
           <!-- <button onclick ="hidenshowsort()" id="srtbtn" type="submit"><img src="img/sort.jpg" alt="Submit"></button> -->
           <div id=srtby>
-            <div class="english">
-              <div>
-                <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
-                <label for="recommendation">recommendation</label>
-              </div>
-              <div>
-                <input type="radio" id="price" name="sorting" value="price" />
-                <label for="price">price</label>
-              </div>
-              <div>
-                <input type="radio" id="rating" name="sorting" value="rating" />
-                <label for="rating">rating</label>
-              </div>
-              <div>
-                <input type="radio" id="distance" name="sorting" value="distance" />
-                <label for="distance">distance</label>
-              </div>
+
+            <div>
+              <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
+              <label class="english" for="recommendation">Recommendation</label>
+              <label class="dutch" for="recommendation">Aanbevolen</label>
             </div>
-            <div class="dutch">
-              <div>
-                <input type="radio" id="recommendation" name="sorting" value="recommendation" checked="checked" />
-                <label for="recommendation">aanbevolen</label>
-              </div>
-              <div>
-                <input type="radio" id="price" name="sorting" value="price" />
-                <label for="price">prijs</label>
-              </div>
-              <div>
-                <input type="radio" id="rating" name="sorting" value="rating" />
-                <label for="rating">Beoordeling</label>
-              </div>
-              <div>
-                <input type="radio" id="distance" name="sorting" value="distance" />
-                <label for="distance">Afstand</label>
-              </div>
+            <div>
+              <input type="radio" id="price" name="sorting" value="price" />
+              <label class="english" for="price">Price</label>
+              <label class="dutch" for="price">Prijs</label>
+            </div>
+            <div>
+              <input type="radio" id="rating" name="sorting" value="rating" />
+              <label class="english" for="rating">Rating</label>
+              <label class="dutch" for="rating">Beoordeling</label>
+            </div>
+            <div>
+              <input type="radio" id="distance" name="sorting" value="distance" />
+              <label class="english" for="distance">Distance</label>
+              <label class="dutch" for="rating">Afstand</label>
             </div>
           </div>
         </div>
