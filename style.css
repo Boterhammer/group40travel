@@ -134,6 +134,7 @@ div.content {
 
   .hiddenfilters h3{
     text-align: center;
+    display:block;
   }
 
   .indexPage input[type=range]{
@@ -167,7 +168,7 @@ div.content {
     [id^=checkboxes] {
         float:left;
         overflow: hidden;
-        margin-left: 10%;
+        margin-left: 5%;
     }  
   .dutch,
   .english {
@@ -216,19 +217,18 @@ div.content {
   }
 
   #log_button{
-    background: radial-gradient(white);
+    background-color: #ffffff80;
     box-shadow: 5px 10px 20px gray;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(5px);
     background-image: url("https://raw.githubusercontent.com/Boterhammer/group40travel/main/img/loginButton.svg");
-    background-position:center;
-    /* #background-color: inherit; */
+    background-position:left;
     background-repeat:no-repeat;
     float: right;
     border: 2px solid #000000;
     border-radius: 32px;
     outline: none;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     height: 60px;
     padding: 0px 8px;
     margin: 10px;
