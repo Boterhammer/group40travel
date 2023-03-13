@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <link rel="stylesheet" href="style.css">
+  <title> group40travel </title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 5,
+        values: [0, 5],
+        slide: function (event, ui) {
+          $("#amount").val("" + ui.values[0] + " - " + ui.values[1]);
+        }
+      });
+      $("#amount").val("" + $("#slider-range").slider("values", 0) +
+        " - " + $("#slider-range").slider("values", 1));
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#slider-range2").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [0, 500],
+        slide: function (event, ui) {
+          $("#amount2").val("" + ui.values[0] + "km - " + ui.values[1] + "km");
+        }
+      });
+      $("#amount2").val("" + $("#slider-range2").slider("values", 0) +
+        "km - " + $("#slider-range2").slider("values", 1) + "km");
+    });
+  </script>
+</head>
+
+
+<body data-lang="english" data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="">
+  <p id="log_button" onclick="location.href='login.html'"></p>
+
+  <p id="eng_button" onclick="changeLanguage('english')"><br></p>
+  <p id="dut_button" onclick="changeLanguage('dutch')"><br></p>
+  <img src="img/logo.png" onclick="location.href='index.html'" style="height:84px;">
+  
+  <div class="inspectContent">
+    <div class="inspectPictureFrame">
+      <img src="img/inspAlexandrosPictures.jpg">
+    </div>
+    <div class="inspectBar">
+      <h1>Alexandros Amstelveen</h1>
+      <div class="barContent">
+        <button onclick="window.open('https://alexandros.nl/', '_blank')">website</button>
+        <button onclick="openTab(event, 'Favourites')" id="like"></button><img src="img/inspectAlexandrosPricing.png">
+      </div>
+    </div>
+    <div class="inspectText"><p class="dutch">In 1988 openden wij, de familie Ganatsios, onze deuren in het mooie Amstelveen. Onze passie is sindsdien onveranderd: het creëren van een onvergetelijke ervaring voor onze gasten. Uit eten gaan moet volgens ons een feestje zijn. Dat voel je direct als je het restaurant binnenstapt. Geen poespas en pretenties, maar ongedwongen genieten van de Griekse keuken op z’n best. Service, sfeer en smaak staan hierbij centraal. Alexandros is een bruisende plek waar de sfeer warm is en de gerechten ongecompliceerd en puur. Met in de zomer een zonnig terras aan het water en in de winter knus aan tafel binnen. Om je helemaal in Griekenland te wanen verwelkomen wij je graag met een heerlijk glaasje ouzo.
+<br>Jiamas! Proost!</p>
+    <p class="english">In 1988 we, the Ganatsios family, opened our doors in beautiful Amstelveen. Our passion has remained unchanged ever since: creating an unforgettable experience for our guests. We think eating out should be a party. You feel that immediately when you enter the restaurant. No fuss and pretensions, but casual enjoyment of Greek cuisine at its best. Service, atmosphere and taste are central to this. Alexandros is a bustling place where the atmosphere is warm and the dishes uncomplicated and pure. With a sunny terrace on the water in the summer and a cozy table inside in the winter. To imagine yourself in Greece, we welcome you with a delicious glass of ouzo.
+<br>Jiamas! Cheers!</p>
+
+    </div>
+    <div class="inspectRating">
+      <img src="img/inspectAlexandrosRating.png" id="rating">
+      <img src="img/inspectAlexandrosMap.png" id="map">
+    </div>
+  </div>
+  
+  <script>
+    function changeLanguage(newLanguage) {
+      document.body.dataset.lang = newLanguage;
+    }
+  </script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
