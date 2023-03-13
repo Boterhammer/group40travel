@@ -348,6 +348,8 @@ div.content {
     width: 150px;
     float: left;
     margin-right: 10px;
+    object-position: center;
+    object-fit: cover;
   }
 
 /*Login Page*/
