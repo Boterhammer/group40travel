@@ -181,7 +181,10 @@ div.content {
   body[data-lang="dutch"] .dutch {
     display: inline-block;
   }
-  
+  /*mainPage translation*/
+  body[data-lang="dutch"] .mainPage #resultSection > div > div > p.dutch { display:block; }
+  body[data-lang="english"] .mainPage #resultSection > div > div > p.english { display:block; }
+
   #dut_button {
     background-image: url("img/dutchFlag.png");
     background-size: cover;
