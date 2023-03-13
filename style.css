@@ -19,7 +19,7 @@ body {
   }
   
   .search ul {
-    opacity: 0.8;
+    opacity: 0.9;
     list-style-type: none;
     overflow: hidden;
     background-color: white;
@@ -56,7 +56,7 @@ div.content {
     box-shadow: 5px 10px 20px gray;
     backdrop-filter: blur(30px); */
     background-color: lightgray;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 20px;
     border-radius: 10px;
     justify-content: space-between;
@@ -106,7 +106,7 @@ div.content {
   #initialfilter{
     margin: 0 auto;
     background-color: white;
-    opacity:0.8;
+    opacity:0.9;
     border-radius:10px;
     width:200px;
     height: 60px;
@@ -245,7 +245,7 @@ div.content {
     transform: translate(-50%, 0%);
 
     border-radius: 8px;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   
   .tab button {
@@ -352,11 +352,11 @@ div.content {
   background-position: 0% -10%;
 }
 
-.loginBox {
+.loginBox{
     width: 400px;
     height: 400px;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     /* background: radial-gradient(white);
     box-shadow: 5px 10px 20px black;
     backdrop-filter: blur(30px); */
@@ -365,24 +365,26 @@ div.content {
     margin-top: 14%;
 }
 
-.loginBox h1 {
+.loginBox h1, .registerBox h1 {
   text-align: center;
   padding-top: 20px;
 }
 
-.loginBox h3,input {
+.loginBox h3,input, .registerBox h3,input {
   margin-left: 30px;
 }
-.loginBox ::placeholder {
+
+.loginBox, .registerBox ::placeholder {
   color: rgb(62, 61, 61);
 }
-.loginBox h3 {
+
+.loginBox h3, .registerBox h3 {
   font-size: 20px;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
-.loginBox input {
+.loginBox input , .registerBox input{
   width: 80%;
   height: 20px;
   outline: none;
@@ -410,10 +412,47 @@ div.content {
   cursor: pointer;
 }
 
-.loginBox button:hover {
+.loginBox button:hover,  .registerBox button:hover {
   color: black;
   background: white;
 }
+
+.loginBox #registerSection {
+  cursor: pointer;
+  margin-left: 43%;
+  margin-top: 5%;
+}
+
+.loginBox #registerSection:hover {
+  color: orange;
+  text-decoration: underline;
+}
+.registerBox{
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  opacity: 0.9;
+  /* background: radial-gradient(white);
+  box-shadow: 5px 10px 20px black;
+  backdrop-filter: blur(30px); */
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 9%;
+}
+
+.registerBox button {
+  font-size: 20px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  background: orange;
+  margin-left: 35%;
+  cursor: pointer;
+}
+
 
 /* Main Page Filter */
 .mainPage #filterSection{
@@ -423,7 +462,7 @@ div.content {
   margin-top: 90px;
   margin-left: 5%;
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 8px;
   float: left;
   /* display: inline-block; */
@@ -438,7 +477,7 @@ div.content {
   display: inline-block;
 
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 8px;
 
   /* max-height: fit-content; */
@@ -480,4 +519,3 @@ div.content {
   display: inline;
   margin-left: 5%;
 }
-
